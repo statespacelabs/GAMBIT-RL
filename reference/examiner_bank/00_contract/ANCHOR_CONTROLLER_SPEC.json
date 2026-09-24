@@ -1,0 +1,78 @@
+{
+  "action_schema": {
+    "binary": [
+      "fire",
+      "jump",
+      "reload",
+      "reserved"
+    ],
+    "continuous": [
+      "move_x",
+      "move_z",
+      "turn_yaw",
+      "look_pitch"
+    ],
+    "range": [
+      -1.0,
+      1.0
+    ]
+  },
+  "anchors": {
+    "bank_anchor_cover_sweeper": {
+      "forward": 0.15,
+      "max_look": 0.8,
+      "shoot_threshold_deg": 18.0,
+      "strafe": 0.75,
+      "switch_period_decisions": 96
+    },
+    "bank_anchor_face_shooter": {
+      "forward": 0.0,
+      "max_look": 0.8,
+      "shoot_threshold_deg": 14.0,
+      "strafe": 0.0,
+      "switch_period_decisions": 48
+    },
+    "bank_anchor_kiter": {
+      "forward": -0.55,
+      "max_look": 0.8,
+      "shoot_threshold_deg": 16.0,
+      "strafe": 0.3,
+      "switch_period_decisions": 72
+    },
+    "bank_anchor_rusher": {
+      "forward": 0.75,
+      "max_look": 0.8,
+      "shoot_threshold_deg": 22.0,
+      "strafe": 0.15,
+      "switch_period_decisions": 80
+    },
+    "bank_anchor_search_pursuer": {
+      "forward": 0.35,
+      "max_look": 0.8,
+      "shoot_threshold_deg": 24.0,
+      "strafe": 0.0,
+      "switch_period_decisions": 64
+    },
+    "bank_anchor_strafe_shooter": {
+      "forward": 0.0,
+      "max_look": 0.8,
+      "shoot_threshold_deg": 18.0,
+      "strafe": 0.65,
+      "switch_period_decisions": 48
+    }
+  },
+  "observation_policy": {
+    "forbidden": [
+      "critic suffix",
+      "hidden-target coordinates",
+      "absolute world coordinates",
+      "map identity",
+      "opponent identity",
+      "NavMesh oracle"
+    ],
+    "hidden_target_behavior": "FairReacquisitionSearch and MapIndependentSafetyLayer over phase5_actor_obs_v001 only",
+    "visible_target_teacher": "actor LOS gate plus local45 indices 20 yaw, 21 pitch, 22 aim"
+  },
+  "schema_version": "phase6_examiner_anchor_spec_v001",
+  "status": "FROZEN"
+}

@@ -1,0 +1,57 @@
+# RL-GRADER Phase 1 — Encoder Pre-training (Dataset v2, Larger Model)
+# Target: gpu-30 with 8x MI250X GPUs (16 GCDs)
+
+# --- Data ---
+manifest_path: "artifacts/demonstrations/joint_manifest.csv"
+image_size: [160, 240]
+seq_len: 150
+
+# --- Model Architecture ---
+# Larger transformer: 8 layers, 16 heads, 3072 FFN (vs 6/8/2048)
+# ~40% more params than v1. Defaults are baked into types.py.
+
+# --- Training Duration ---
+# ~10,900 train clips. Global batch = 256 clips/step.
+# 200 steps/epoch × 256 = 51,200 clips/epoch (~4.7 passes)
+epochs: 100
+batches_per_epoch: 200
+
+# --- PxK Batch Sampling ---
+# 8 GPUs × 8 players × 4 clips = 256 global batch
+players_per_rank: 8
+clips_per_player: 4
+
+# --- Hardware & Data Loading ---
+num_workers: 12
+amp: true
+
+# --- Optimizer ---
+lr: 0.0003
+weight_decay: 0.05
+grad_clip_norm: 1.0
+
+# --- DDP Gather ---
+gather_z: true
+gather_z_raw: false
+gather_p: false
+
+# --- VC Regularization ---
+vc_on_global_p: false
+vc_on_global_z_raw: false
+
+# --- Loss ---
+contrastive_loss_mode: "global_infonce_local_vc"
+
+# --- Logging & Checkpointing ---
+log_every: 5
+save_every_epochs: 5
+output_dir: "checkpoints_v2_large"
+
+# --- Validation & Early Stopping ---
+val_batches_per_epoch: 20
+patience: 10
+min_lr: 0.000001
+
+# --- EMA ---
+# Controlled via --ema CLI flag, not used unless explicitly enabled
+ema_decay: 0.999

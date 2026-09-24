@@ -1,0 +1,4747 @@
+{
+  "actor_access_to_occupancy_or_navmesh": false,
+  "families": [
+    "narrow_wide_transitions",
+    "open_scattered_cover",
+    "parallel_corridors",
+    "pillars_alternating_cover",
+    "rooms_doorways"
+  ],
+  "heldout_entire_families": [
+    "u_traps_dead_ends"
+  ],
+  "immutable": true,
+  "layouts": [
+    {
+      "arena_size": [
+        40.889258,
+        43.427153
+      ],
+      "family": "open_scattered_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          40.889258,
+          0.5,
+          43.427153
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "8fdb4a9fd7cff8d2e3a92c59621f4d37a3be766a17af9435ebd7467d25c46365",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.863031,
+            21.913572
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            41.68924,
+            3.726061,
+            0.399991
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.863031,
+            -21.913572
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            41.68924,
+            3.726061,
+            0.399991
+          ]
+        },
+        {
+          "center": [
+            20.644624,
+            1.863031,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.399991,
+            3.726061,
+            43.427153
+          ]
+        },
+        {
+          "center": [
+            -20.644624,
+            1.863031,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.399991,
+            3.726061,
+            43.427153
+          ]
+        },
+        {
+          "center": [
+            0.98284,
+            1.370592,
+            4.900906
+          ],
+          "id": "cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.772856,
+            2.741184,
+            3.739456
+          ]
+        },
+        {
+          "center": [
+            12.605925,
+            0.940952,
+            -13.621249
+          ],
+          "id": "cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            5.236841,
+            1.881904,
+            2.988993
+          ]
+        },
+        {
+          "center": [
+            15.345843,
+            1.662746,
+            15.253191
+          ],
+          "id": "cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            3.521819,
+            3.325493,
+            2.163991
+          ]
+        },
+        {
+          "center": [
+            -5.923401,
+            1.593994,
+            -7.747714
+          ],
+          "id": "cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            4.731542,
+            3.187988,
+            3.473211
+          ]
+        },
+        {
+          "center": [
+            -13.190495,
+            1.583967,
+            -4.535128
+          ],
+          "id": "cover_4",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            4.258773,
+            3.167934,
+            2.465551
+          ]
+        },
+        {
+          "center": [
+            4.603809,
+            1.832515,
+            16.951346
+          ],
+          "id": "cover_5",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.249192,
+            3.665029,
+            1.266884
+          ]
+        },
+        {
+          "center": [
+            -9.693101,
+            1.293783,
+            -8.073768
+          ],
+          "id": "cover_6",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.074416,
+            2.587566,
+            4.938658
+          ]
+        },
+        {
+          "center": [
+            -10.192432,
+            1.228806,
+            12.170808
+          ],
+          "id": "cover_7",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            3.260142,
+            2.457612,
+            3.795348
+          ]
+        },
+        {
+          "center": [
+            17.210664,
+            1.153813,
+            8.365025
+          ],
+          "id": "cover_8",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            4.700825,
+            2.307627,
+            1.394087
+          ]
+        },
+        {
+          "center": [
+            -11.715516,
+            1.324482,
+            -15.902847
+          ],
+          "id": "cover_9",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            3.159622,
+            2.648963,
+            3.459972
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.466361,
+        "floor_dynamic_friction": 0.294687,
+        "floor_static_friction": 0.870146,
+        "movement_speed_scale": 0.972262,
+        "obstacle_width": 3.121998,
+        "spawn_bearing_degrees": -45.0,
+        "spawn_distance_range": [
+          7.787568,
+          19.2949
+        ],
+        "target_motion": "patrol",
+        "wall_height": 3.726061,
+        "wall_thickness": 0.399991
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550000,
+      "spawn_a": {
+        "position": [
+          14.205371,
+          1.0,
+          9.436424
+        ],
+        "yaw_degrees": -45.0
+      },
+      "spawn_b": {
+        "position": [
+          4.705371,
+          1.0,
+          18.936424
+        ],
+        "yaw_degrees": 135.0
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 6031,
+        "occupancy_graph_sha256": "c429f785e2f3786c6ac04da3d902b04cf26d5156becab1c5d85cc8bef0d0460c",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 6031,
+        "route_length_m": 19.0,
+        "spawn_distance_m": 13.435029,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        41.168345,
+        28.361009
+      ],
+      "family": "parallel_corridors",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          41.168345,
+          0.5,
+          28.361009
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "3767472d8e841776f90e65bf0f2ba1320948840fd0dcc01cb96d7c75e5e1b812",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.134178,
+            14.394817
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            42.025595,
+            2.268357,
+            0.428625
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.134178,
+            -14.394817
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            42.025595,
+            2.268357,
+            0.428625
+          ]
+        },
+        {
+          "center": [
+            20.798485,
+            1.134178,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            28.361009
+          ]
+        },
+        {
+          "center": [
+            -20.798485,
+            1.134178,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            28.361009
+          ]
+        },
+        {
+          "center": [
+            -6.689856,
+            1.134178,
+            -9.17793
+          ],
+          "id": "corridor_0_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            7.005149
+          ]
+        },
+        {
+          "center": [
+            -6.689856,
+            1.134178,
+            5.455477
+          ],
+          "id": "corridor_0_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            14.450055
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.134178,
+            -5.791339
+          ],
+          "id": "corridor_1_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            13.778331
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.134178,
+            8.842068
+          ],
+          "id": "corridor_1_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            7.676873
+          ]
+        },
+        {
+          "center": [
+            6.689856,
+            1.134178,
+            -4.463927
+          ],
+          "id": "corridor_2_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            16.433155
+          ]
+        },
+        {
+          "center": [
+            6.689856,
+            1.134178,
+            10.16948
+          ],
+          "id": "corridor_2_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.428625,
+            2.268357,
+            5.022049
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.905805,
+        "floor_dynamic_friction": 0.741251,
+        "floor_static_friction": 0.788831,
+        "movement_speed_scale": 0.925196,
+        "obstacle_width": 2.640501,
+        "spawn_bearing_degrees": 109.983107,
+        "spawn_distance_range": [
+          8.206217,
+          25.923564
+        ],
+        "target_motion": "strafe",
+        "wall_height": 2.268357,
+        "wall_thickness": 0.428625
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550001,
+      "spawn_a": {
+        "position": [
+          -10.934173,
+          1.0,
+          -6.530504
+        ],
+        "yaw_degrees": 109.983107
+      },
+      "spawn_b": {
+        "position": [
+          5.565827,
+          1.0,
+          -12.530504
+        ],
+        "yaw_degrees": -70.016893
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 3923,
+        "occupancy_graph_sha256": "f6d2b286906aff2f00c678f8a0eab8fc2afd35a93b7b2a5a21a78670ea8cf596",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 3923,
+        "route_length_m": 24.5,
+        "spawn_distance_m": 17.55705,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        40.334189,
+        43.133986
+      ],
+      "family": "rooms_doorways",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          40.334189,
+          0.5,
+          43.133986
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "96b69216aa72dd666bd226c26cd5c2f81a939a7fe9297a10d0e0fba0c5c84313",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.495716,
+            21.889077
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            41.622527,
+            2.991432,
+            0.644169
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.495716,
+            -21.889077
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            41.622527,
+            2.991432,
+            0.644169
+          ]
+        },
+        {
+          "center": [
+            20.489179,
+            1.495716,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.644169,
+            2.991432,
+            43.133986
+          ]
+        },
+        {
+          "center": [
+            -20.489179,
+            1.495716,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.644169,
+            2.991432,
+            43.133986
+          ]
+        },
+        {
+          "center": [
+            1.946908,
+            1.495716,
+            -10.343046
+          ],
+          "id": "room_vertical_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.644169,
+            2.991432,
+            19.447894
+          ]
+        },
+        {
+          "center": [
+            1.946908,
+            1.495716,
+            11.917748
+          ],
+          "id": "room_vertical_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.644169,
+            2.991432,
+            16.298491
+          ]
+        },
+        {
+          "center": [
+            -8.896136,
+            1.495716,
+            -7.548448
+          ],
+          "id": "room_partition_left",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            19.541918,
+            2.991432,
+            0.644169
+          ]
+        },
+        {
+          "center": [
+            10.843043,
+            1.495716,
+            7.548448
+          ],
+          "id": "room_partition_right",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            15.648102,
+            2.991432,
+            0.644169
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.387601,
+        "floor_dynamic_friction": 0.670156,
+        "floor_static_friction": 0.534992,
+        "movement_speed_scale": 1.146279,
+        "obstacle_width": 2.996672,
+        "spawn_bearing_degrees": -101.309932,
+        "spawn_distance_range": [
+          9.682714,
+          20.639827
+        ],
+        "target_motion": "patrol",
+        "wall_height": 2.991432,
+        "wall_thickness": 0.644169
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550002,
+      "spawn_a": {
+        "position": [
+          2.982905,
+          1.0,
+          14.083007
+        ],
+        "yaw_degrees": -101.309932
+      },
+      "spawn_b": {
+        "position": [
+          -12.017095,
+          1.0,
+          11.083007
+        ],
+        "yaw_degrees": 78.690068
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 6040,
+        "occupancy_graph_sha256": "0384c6b9272b86cdae94a9158a901d9dc5d8dab1355ec5e7f8500fd7daea1d96",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 6040,
+        "route_length_m": 67.0,
+        "spawn_distance_m": 15.297059,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        29.12726,
+        31.616392
+      ],
+      "family": "pillars_alternating_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          29.12726,
+          0.5,
+          31.616392
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "ca9916956ffe02b105adf32ff1c74de51ec8f4efa44185ffafc6b26d24c401ea",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.503424,
+            16.195381
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            30.676,
+            3.006847,
+            0.77437
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.503424,
+            -16.195381
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            30.676,
+            3.006847,
+            0.77437
+          ]
+        },
+        {
+          "center": [
+            14.950815,
+            1.503424,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.77437,
+            3.006847,
+            31.616392
+          ]
+        },
+        {
+          "center": [
+            -14.950815,
+            1.503424,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.77437,
+            3.006847,
+            31.616392
+          ]
+        },
+        {
+          "center": [
+            -9.709087,
+            1.158543,
+            -12.646557
+          ],
+          "id": "pillar_0",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.406623,
+            2.317086,
+            1.406623
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.01575,
+            -12.646557
+          ],
+          "id": "pillar_1",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.438775,
+            2.031501,
+            1.438775
+          ]
+        },
+        {
+          "center": [
+            9.709087,
+            1.287902,
+            -12.646557
+          ],
+          "id": "pillar_2",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.371201,
+            2.575804,
+            1.371201
+          ]
+        },
+        {
+          "center": [
+            -4.854543,
+            1.149461,
+            -6.323278
+          ],
+          "id": "pillar_3",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.328132,
+            2.298921,
+            2.328132
+          ]
+        },
+        {
+          "center": [
+            4.854543,
+            1.32601,
+            -6.323278
+          ],
+          "id": "pillar_4",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.193053,
+            2.652021,
+            2.193053
+          ]
+        },
+        {
+          "center": [
+            -9.709087,
+            1.349106,
+            0.0
+          ],
+          "id": "pillar_5",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.706091,
+            2.698212,
+            2.706091
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.022903,
+            0.0
+          ],
+          "id": "pillar_6",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            3.067363,
+            2.045806,
+            3.067363
+          ]
+        },
+        {
+          "center": [
+            9.709087,
+            1.303164,
+            0.0
+          ],
+          "id": "pillar_7",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.944926,
+            2.606327,
+            1.944926
+          ]
+        },
+        {
+          "center": [
+            -4.854543,
+            1.450637,
+            6.323278
+          ],
+          "id": "pillar_8",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.682987,
+            2.901273,
+            1.682987
+          ]
+        },
+        {
+          "center": [
+            4.854543,
+            1.43858,
+            6.323278
+          ],
+          "id": "pillar_9",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.967785,
+            2.877161,
+            1.967785
+          ]
+        },
+        {
+          "center": [
+            -9.709087,
+            1.415319,
+            12.646557
+          ],
+          "id": "pillar_10",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.111194,
+            2.830639,
+            1.111194
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.136056,
+            12.646557
+          ],
+          "id": "pillar_11",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.885865,
+            2.272113,
+            1.885865
+          ]
+        },
+        {
+          "center": [
+            9.709087,
+            1.140446,
+            12.646557
+          ],
+          "id": "pillar_12",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            3.136376,
+            2.280891,
+            3.136376
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.37473,
+        "floor_dynamic_friction": 0.379609,
+        "floor_static_friction": 0.803911,
+        "movement_speed_scale": 0.903256,
+        "obstacle_width": 3.187487,
+        "spawn_bearing_degrees": 56.309932,
+        "spawn_distance_range": [
+          9.68057,
+          28.455284
+        ],
+        "target_motion": "alternating_cover",
+        "wall_height": 3.006847,
+        "wall_thickness": 0.77437
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550003,
+      "spawn_a": {
+        "position": [
+          -13.91363,
+          1.0,
+          -13.158196
+        ],
+        "yaw_degrees": 56.309932
+      },
+      "spawn_b": {
+        "position": [
+          7.08637,
+          1.0,
+          0.841804
+        ],
+        "yaw_degrees": -123.690068
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 2831,
+        "occupancy_graph_sha256": "b28a95048647d1afa769e0c224b1cc0cd4d497dd6d2b0da22c6b7a2b1276e34b",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 2831,
+        "route_length_m": 35.0,
+        "spawn_distance_m": 25.238859,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        42.235713,
+        28.756355
+      ],
+      "family": "narrow_wide_transitions",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          42.235713,
+          0.5,
+          28.756355
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "3ea589120a6f37dee417243dded737b9f1f028ddd3f90ff75d96485172078d26",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            2.168948,
+            14.608378
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            43.156517,
+            4.337897,
+            0.460402
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.168948,
+            -14.608378
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            43.156517,
+            4.337897,
+            0.460402
+          ]
+        },
+        {
+          "center": [
+            21.348057,
+            2.168948,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.460402,
+            4.337897,
+            28.756355
+          ]
+        },
+        {
+          "center": [
+            -21.348057,
+            2.168948,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.460402,
+            4.337897,
+            28.756355
+          ]
+        },
+        {
+          "center": [
+            -2.390168,
+            2.168948,
+            -6.89525
+          ],
+          "id": "neck_-1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.460402,
+            4.337897,
+            11.965856
+          ]
+        },
+        {
+          "center": [
+            -4.916136,
+            2.168948,
+            5.982928
+          ],
+          "id": "wide_-1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.460402,
+            4.337897,
+            13.790499
+          ]
+        },
+        {
+          "center": [
+            2.390168,
+            2.168948,
+            -6.89525
+          ],
+          "id": "neck_1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.460402,
+            4.337897,
+            11.965856
+          ]
+        },
+        {
+          "center": [
+            4.916136,
+            2.168948,
+            5.982928
+          ],
+          "id": "wide_1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.460402,
+            4.337897,
+            13.790499
+          ]
+        },
+        {
+          "center": [
+            3.146327,
+            1.190474,
+            2.224754
+          ],
+          "id": "transition_cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.774059,
+            2.380948,
+            2.774059
+          ]
+        },
+        {
+          "center": [
+            3.146327,
+            1.138722,
+            9.426992
+          ],
+          "id": "transition_cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.774059,
+            2.277444,
+            2.774059
+          ]
+        },
+        {
+          "center": [
+            -3.146327,
+            1.69316,
+            3.057959
+          ],
+          "id": "transition_cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.774059,
+            3.386319,
+            2.774059
+          ]
+        },
+        {
+          "center": [
+            -3.146327,
+            1.785372,
+            6.192477
+          ],
+          "id": "transition_cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.774059,
+            3.570744,
+            2.774059
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.119087,
+        "floor_dynamic_friction": 0.383882,
+        "floor_static_friction": 0.558551,
+        "movement_speed_scale": 1.078454,
+        "obstacle_width": 2.774059,
+        "spawn_bearing_degrees": 150.255119,
+        "spawn_distance_range": [
+          5.639338,
+          17.98885
+        ],
+        "target_motion": "stationary",
+        "wall_height": 4.337897,
+        "wall_thickness": 0.460402
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550004,
+      "spawn_a": {
+        "position": [
+          0.032144,
+          1.0,
+          11.271823
+        ],
+        "yaw_degrees": 150.255119
+      },
+      "spawn_b": {
+        "position": [
+          4.032144,
+          1.0,
+          4.271823
+        ],
+        "yaw_degrees": -29.744881
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 3968,
+        "occupancy_graph_sha256": "dfdb58364f4ee1c34665f9271204e4ac741d3b90e72c9bca5361fd960ecf806e",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 3968,
+        "route_length_m": 11.0,
+        "spawn_distance_m": 8.062258,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        31.192023,
+        28.810486
+      ],
+      "family": "open_scattered_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          31.192023,
+          0.5,
+          28.810486
+        ]
+      },
+      "generation_attempt": 2,
+      "layout_sha256": "8de7beb4f2df0e298329649c44f417809e68af1f250d26915dcb473de5fc21d3",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            2.288009,
+            14.58445
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            31.908851,
+            4.576017,
+            0.358414
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.288009,
+            -14.58445
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            31.908851,
+            4.576017,
+            0.358414
+          ]
+        },
+        {
+          "center": [
+            15.775218,
+            2.288009,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.358414,
+            4.576017,
+            28.810486
+          ]
+        },
+        {
+          "center": [
+            -15.775218,
+            2.288009,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.358414,
+            4.576017,
+            28.810486
+          ]
+        },
+        {
+          "center": [
+            12.549974,
+            1.70671,
+            -1.565815
+          ],
+          "id": "cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.674472,
+            3.41342,
+            1.697045
+          ]
+        },
+        {
+          "center": [
+            9.188464,
+            1.02037,
+            10.815032
+          ],
+          "id": "cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.077758,
+            2.040739,
+            1.383517
+          ]
+        },
+        {
+          "center": [
+            0.808606,
+            1.355438,
+            5.248193
+          ],
+          "id": "cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.792771,
+            2.710875,
+            2.149439
+          ]
+        },
+        {
+          "center": [
+            3.056764,
+            2.120328,
+            -1.407213
+          ],
+          "id": "cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.683992,
+            4.240655,
+            1.922944
+          ]
+        },
+        {
+          "center": [
+            6.169701,
+            2.25454,
+            7.757173
+          ],
+          "id": "cover_4",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.665048,
+            4.50908,
+            1.413435
+          ]
+        },
+        {
+          "center": [
+            4.187259,
+            1.050864,
+            -7.955094
+          ],
+          "id": "cover_5",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.897017,
+            2.101728,
+            2.037717
+          ]
+        },
+        {
+          "center": [
+            2.019823,
+            1.047071,
+            -5.157071
+          ],
+          "id": "cover_6",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.259467,
+            2.094143,
+            1.79797
+          ]
+        },
+        {
+          "center": [
+            1.749606,
+            2.249289,
+            0.593559
+          ],
+          "id": "cover_7",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.808556,
+            4.498578,
+            1.384201
+          ]
+        },
+        {
+          "center": [
+            0.009366,
+            2.263246,
+            -1.994851
+          ],
+          "id": "cover_8",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.337916,
+            4.526492,
+            1.928689
+          ]
+        },
+        {
+          "center": [
+            -4.721726,
+            1.895288,
+            -7.520716
+          ],
+          "id": "cover_9",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.04647,
+            3.790575,
+            1.482348
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.018931,
+        "floor_dynamic_friction": 0.630155,
+        "floor_static_friction": 0.852467,
+        "movement_speed_scale": 0.902889,
+        "obstacle_width": 1.346017,
+        "spawn_bearing_degrees": 56.725112,
+        "spawn_distance_range": [
+          5.940792,
+          28.675752
+        ],
+        "target_motion": "alternating_cover",
+        "wall_height": 4.576017,
+        "wall_thickness": 0.358414
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550005,
+      "spawn_a": {
+        "position": [
+          -5.946011,
+          1.0,
+          -9.255243
+        ],
+        "yaw_degrees": 56.725112
+      },
+      "spawn_b": {
+        "position": [
+          10.053989,
+          1.0,
+          1.244757
+        ],
+        "yaw_degrees": -123.274888
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 3010,
+        "occupancy_graph_sha256": "94a51f4e139931e65d0f343a3fcb10a2c7e56e1efca8378a0845908df2e50a85",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 3010,
+        "route_length_m": 27.5,
+        "spawn_distance_m": 19.137659,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        42.923679,
+        41.234389
+      ],
+      "family": "parallel_corridors",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          42.923679,
+          0.5,
+          41.234389
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "bdb7211881043c512efc2fe616b5e6e3bb94c9814be1f873b04e180c0f0ba1ee",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.506511,
+            20.844719
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            43.833777,
+            3.013022,
+            0.455049
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.506511,
+            -20.844719
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            43.833777,
+            3.013022,
+            0.455049
+          ]
+        },
+        {
+          "center": [
+            21.689364,
+            1.506511,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            41.234389
+          ]
+        },
+        {
+          "center": [
+            -21.689364,
+            1.506511,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            41.234389
+          ]
+        },
+        {
+          "center": [
+            -6.975098,
+            1.506511,
+            -12.605613
+          ],
+          "id": "corridor_0_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            13.023164
+          ]
+        },
+        {
+          "center": [
+            -6.975098,
+            1.506511,
+            8.227412
+          ],
+          "id": "corridor_0_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            21.779564
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.506511,
+            -13.664583
+          ],
+          "id": "corridor_1_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            10.905222
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.506511,
+            7.168442
+          ],
+          "id": "corridor_1_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            23.897506
+          ]
+        },
+        {
+          "center": [
+            6.975098,
+            1.506511,
+            -12.252152
+          ],
+          "id": "corridor_2_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            13.730085
+          ]
+        },
+        {
+          "center": [
+            6.975098,
+            1.506511,
+            8.580873
+          ],
+          "id": "corridor_2_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.455049,
+            3.013022,
+            21.072643
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.431661,
+        "floor_dynamic_friction": 0.227497,
+        "floor_static_friction": 0.399303,
+        "movement_speed_scale": 0.944391,
+        "obstacle_width": 2.052845,
+        "spawn_bearing_degrees": -102.094757,
+        "spawn_distance_range": [
+          6.666305,
+          21.336109
+        ],
+        "target_motion": "patrol",
+        "wall_height": 3.013022,
+        "wall_thickness": 0.455049
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550006,
+      "spawn_a": {
+        "position": [
+          17.68816,
+          1.0,
+          14.032805
+        ],
+        "yaw_degrees": -102.094757
+      },
+      "spawn_b": {
+        "position": [
+          10.68816,
+          1.0,
+          12.532805
+        ],
+        "yaw_degrees": 77.905243
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 5824,
+        "occupancy_graph_sha256": "2d92dd49988e42efc9a24a816a72831c33fba920445e231caa8ca27943fe0113",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 5824,
+        "route_length_m": 8.5,
+        "spawn_distance_m": 7.158911,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        43.425454,
+        32.597457
+      ],
+      "family": "rooms_doorways",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          43.425454,
+          0.5,
+          32.597457
+        ]
+      },
+      "generation_attempt": 1,
+      "layout_sha256": "04ded6488ca674aa8d3f1877a89058728f633f64a94bede47702170190f8897c",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.982263,
+            16.651749
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            44.837534,
+            3.964527,
+            0.70604
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.982263,
+            -16.651749
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            44.837534,
+            3.964527,
+            0.70604
+          ]
+        },
+        {
+          "center": [
+            22.065747,
+            1.982263,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.70604,
+            3.964527,
+            32.597457
+          ]
+        },
+        {
+          "center": [
+            -22.065747,
+            1.982263,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.70604,
+            3.964527,
+            32.597457
+          ]
+        },
+        {
+          "center": [
+            -0.396328,
+            1.982263,
+            -6.118465
+          ],
+          "id": "room_vertical_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.70604,
+            3.964527,
+            17.360527
+          ]
+        },
+        {
+          "center": [
+            -0.396328,
+            1.982263,
+            10.629536
+          ],
+          "id": "room_vertical_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.70604,
+            3.964527,
+            8.338386
+          ]
+        },
+        {
+          "center": [
+            -10.856038,
+            1.982263,
+            -5.704555
+          ],
+          "id": "room_partition_left",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            18.713379,
+            3.964527,
+            0.70604
+          ]
+        },
+        {
+          "center": [
+            10.459709,
+            1.982263,
+            5.704555
+          ],
+          "id": "room_partition_right",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            19.506035,
+            3.964527,
+            0.70604
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.898544,
+        "floor_dynamic_friction": 0.791726,
+        "floor_static_friction": 0.320638,
+        "movement_speed_scale": 1.124863,
+        "obstacle_width": 2.602744,
+        "spawn_bearing_degrees": -47.29061,
+        "spawn_distance_range": [
+          5.556811,
+          22.382049
+        ],
+        "target_motion": "patrol",
+        "wall_height": 3.964527,
+        "wall_thickness": 0.70604
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550007,
+      "spawn_a": {
+        "position": [
+          -5.062727,
+          1.0,
+          -1.148728
+        ],
+        "yaw_degrees": -47.29061
+      },
+      "spawn_b": {
+        "position": [
+          -18.062727,
+          1.0,
+          10.851272
+        ],
+        "yaw_degrees": 132.70939
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 4809,
+        "occupancy_graph_sha256": "673c24c240c14dbca215c696dafa2fef4194afb4898b1d1d124b0e30bf5335b0",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 4809,
+        "route_length_m": 25.0,
+        "spawn_distance_m": 17.691806,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        34.485953,
+        29.492986
+      ],
+      "family": "pillars_alternating_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          34.485953,
+          0.5,
+          29.492986
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "ea7d8d491d35caa9f2dc38015225237cac7e92c72ab32cf27e5549a96ee499e6",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            2.352184,
+            14.940248
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            35.260973,
+            4.704369,
+            0.38751
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.352184,
+            -14.940248
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            35.260973,
+            4.704369,
+            0.38751
+          ]
+        },
+        {
+          "center": [
+            17.436732,
+            2.352184,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.38751,
+            4.704369,
+            29.492986
+          ]
+        },
+        {
+          "center": [
+            -17.436732,
+            2.352184,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.38751,
+            4.704369,
+            29.492986
+          ]
+        },
+        {
+          "center": [
+            -11.495318,
+            1.523141,
+            -11.797194
+          ],
+          "id": "pillar_0",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.400118,
+            3.046281,
+            1.400118
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.578723,
+            -11.797194
+          ],
+          "id": "pillar_1",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.263078,
+            3.157447,
+            2.263078
+          ]
+        },
+        {
+          "center": [
+            11.495318,
+            2.127622,
+            -11.797194
+          ],
+          "id": "pillar_2",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.407248,
+            4.255245,
+            1.407248
+          ]
+        },
+        {
+          "center": [
+            -5.747659,
+            2.241706,
+            -5.898597
+          ],
+          "id": "pillar_3",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.228715,
+            4.483412,
+            2.228715
+          ]
+        },
+        {
+          "center": [
+            5.747659,
+            1.785051,
+            -5.898597
+          ],
+          "id": "pillar_4",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.05244,
+            3.570102,
+            2.05244
+          ]
+        },
+        {
+          "center": [
+            -11.495318,
+            2.113694,
+            0.0
+          ],
+          "id": "pillar_5",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.260923,
+            4.227387,
+            1.260923
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.131837,
+            0.0
+          ],
+          "id": "pillar_6",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            2.167256,
+            4.263674,
+            2.167256
+          ]
+        },
+        {
+          "center": [
+            11.495318,
+            1.164475,
+            0.0
+          ],
+          "id": "pillar_7",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.999539,
+            2.32895,
+            1.999539
+          ]
+        },
+        {
+          "center": [
+            -5.747659,
+            2.14619,
+            5.898597
+          ],
+          "id": "pillar_8",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.267116,
+            4.292379,
+            1.267116
+          ]
+        },
+        {
+          "center": [
+            5.747659,
+            1.243764,
+            5.898597
+          ],
+          "id": "pillar_9",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.266052,
+            2.487529,
+            1.266052
+          ]
+        },
+        {
+          "center": [
+            -11.495318,
+            1.071717,
+            11.797194
+          ],
+          "id": "pillar_10",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.309535,
+            2.143434,
+            1.309535
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.136375,
+            11.797194
+          ],
+          "id": "pillar_11",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.143917,
+            2.27275,
+            1.143917
+          ]
+        },
+        {
+          "center": [
+            11.495318,
+            1.152594,
+            11.797194
+          ],
+          "id": "pillar_12",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.915167,
+            2.305189,
+            1.915167
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.012939,
+        "floor_dynamic_friction": 0.79818,
+        "floor_static_friction": 0.607799,
+        "movement_speed_scale": 0.865039,
+        "obstacle_width": 2.434325,
+        "spawn_bearing_degrees": 57.094757,
+        "spawn_distance_range": [
+          6.111772,
+          21.836777
+        ],
+        "target_motion": "patrol",
+        "wall_height": 4.704369,
+        "wall_thickness": 0.38751
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550008,
+      "spawn_a": {
+        "position": [
+          -15.092977,
+          1.0,
+          -9.096493
+        ],
+        "yaw_degrees": 57.094757
+      },
+      "spawn_b": {
+        "position": [
+          -6.592977,
+          1.0,
+          -3.596493
+        ],
+        "yaw_degrees": -122.905243
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 3347,
+        "occupancy_graph_sha256": "0a0cba8f41b0aed6ee2600d187f1a99edd80e7a94440207c6fbc551dab38cf40",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 3347,
+        "route_length_m": 14.0,
+        "spawn_distance_m": 10.124228,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        36.008877,
+        41.752751
+      ],
+      "family": "narrow_wide_transitions",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          36.008877,
+          0.5,
+          41.752751
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "28d506a36a6c84e26220a6d15a074a0a2803e89e11ffbe751abb6ab2e4bdd051",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            2.284576,
+            21.141736
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            37.070319,
+            4.569152,
+            0.530721
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.284576,
+            -21.141736
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            37.070319,
+            4.569152,
+            0.530721
+          ]
+        },
+        {
+          "center": [
+            18.269799,
+            2.284576,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.530721,
+            4.569152,
+            41.752751
+          ]
+        },
+        {
+          "center": [
+            -18.269799,
+            2.284576,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.530721,
+            4.569152,
+            41.752751
+          ]
+        },
+        {
+          "center": [
+            -1.937443,
+            2.284576,
+            -8.823524
+          ],
+          "id": "neck_-1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.530721,
+            4.569152,
+            21.105703
+          ]
+        },
+        {
+          "center": [
+            -3.566458,
+            2.284576,
+            10.552851
+          ],
+          "id": "wide_-1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.530721,
+            4.569152,
+            17.647048
+          ]
+        },
+        {
+          "center": [
+            1.937443,
+            2.284576,
+            -8.823524
+          ],
+          "id": "neck_1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.530721,
+            4.569152,
+            21.105703
+          ]
+        },
+        {
+          "center": [
+            3.566458,
+            2.284576,
+            10.552851
+          ],
+          "id": "wide_1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.530721,
+            4.569152,
+            17.647048
+          ]
+        },
+        {
+          "center": [
+            -2.282533,
+            1.839248,
+            3.742681
+          ],
+          "id": "transition_cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.385062,
+            3.678496,
+            1.385062
+          ]
+        },
+        {
+          "center": [
+            -2.282533,
+            1.367977,
+            7.178493
+          ],
+          "id": "transition_cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.385062,
+            2.735954,
+            1.385062
+          ]
+        },
+        {
+          "center": [
+            -2.282533,
+            1.031729,
+            9.39099
+          ],
+          "id": "transition_cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.385062,
+            2.063458,
+            1.385062
+          ]
+        },
+        {
+          "center": [
+            -2.282533,
+            1.878554,
+            13.457801
+          ],
+          "id": "transition_cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.385062,
+            3.757107,
+            1.385062
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.331075,
+        "floor_dynamic_friction": 0.552612,
+        "floor_static_friction": 0.344555,
+        "movement_speed_scale": 1.030507,
+        "obstacle_width": 1.385062,
+        "spawn_bearing_degrees": -78.690068,
+        "spawn_distance_range": [
+          6.618924,
+          21.913773
+        ],
+        "target_motion": "patrol",
+        "wall_height": 4.569152,
+        "wall_thickness": 0.530721
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550009,
+      "spawn_a": {
+        "position": [
+          8.145561,
+          1.0,
+          -2.226376
+        ],
+        "yaw_degrees": -78.690068
+      },
+      "spawn_b": {
+        "position": [
+          -11.854439,
+          1.0,
+          1.773624
+        ],
+        "yaw_degrees": 101.309932
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 5029,
+        "occupancy_graph_sha256": "f0550869bf764263631a605485651ae3ceccee2be71d86c62a13705ded09396a",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 5029,
+        "route_length_m": 60.0,
+        "spawn_distance_m": 20.396078,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        39.919771,
+        31.448861
+      ],
+      "family": "open_scattered_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          39.919771,
+          0.5,
+          31.448861
+        ]
+      },
+      "generation_attempt": 1,
+      "layout_sha256": "c24c5765ca0bb09c7380d3f1ef6b8abb32f8716762da5fa9f7517a170e2157eb",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.10805,
+            15.932738
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            40.753001,
+            2.2161,
+            0.416615
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.10805,
+            -15.932738
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            40.753001,
+            2.2161,
+            0.416615
+          ]
+        },
+        {
+          "center": [
+            20.168193,
+            1.10805,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.416615,
+            2.2161,
+            31.448861
+          ]
+        },
+        {
+          "center": [
+            -20.168193,
+            1.10805,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.416615,
+            2.2161,
+            31.448861
+          ]
+        },
+        {
+          "center": [
+            -7.507279,
+            0.901235,
+            -2.828385
+          ],
+          "id": "cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            3.057253,
+            1.802469,
+            2.551491
+          ]
+        },
+        {
+          "center": [
+            -1.935068,
+            0.996291,
+            3.743153
+          ],
+          "id": "cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.122179,
+            1.992581,
+            1.851474
+          ]
+        },
+        {
+          "center": [
+            -1.297955,
+            0.990448,
+            -12.561796
+          ],
+          "id": "cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.616308,
+            1.980895,
+            1.455165
+          ]
+        },
+        {
+          "center": [
+            15.339914,
+            1.03187,
+            -5.902766
+          ],
+          "id": "cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.801341,
+            2.063739,
+            1.481153
+          ]
+        },
+        {
+          "center": [
+            -5.743636,
+            0.98658,
+            -6.824874
+          ],
+          "id": "cover_4",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.509676,
+            1.973159,
+            1.437649
+          ]
+        },
+        {
+          "center": [
+            14.817309,
+            1.026344,
+            3.182134
+          ],
+          "id": "cover_5",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.298741,
+            2.052688,
+            1.876435
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.299425,
+        "floor_dynamic_friction": 0.562285,
+        "floor_static_friction": 0.544242,
+        "movement_speed_scale": 1.012958,
+        "obstacle_width": 1.749669,
+        "spawn_bearing_degrees": 136.974934,
+        "spawn_distance_range": [
+          6.240226,
+          22.436229
+        ],
+        "target_motion": "strafe",
+        "wall_height": 2.2161,
+        "wall_thickness": 0.416615
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550010,
+      "spawn_a": {
+        "position": [
+          -3.809886,
+          1.0,
+          3.925569
+        ],
+        "yaw_degrees": 136.974934
+      },
+      "spawn_b": {
+        "position": [
+          3.190114,
+          1.0,
+          -3.574431
+        ],
+        "yaw_degrees": -43.025066
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 4531,
+        "occupancy_graph_sha256": "6fe1cd4cac1c24abdbc979bd7cb2273aa32f60142b1e8a401aab949cc83e3437",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 4531,
+        "route_length_m": 14.5,
+        "spawn_distance_m": 10.259142,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        40.174428,
+        28.427772
+      ],
+      "family": "parallel_corridors",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          40.174428,
+          0.5,
+          28.427772
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "fbc9b29c783365082e8e5545b2db09987c5dc479802db64bd7b0794d990acfc9",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.511877,
+            14.52597
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            41.422764,
+            3.023753,
+            0.624168
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.511877,
+            -14.52597
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            41.422764,
+            3.023753,
+            0.624168
+          ]
+        },
+        {
+          "center": [
+            20.399298,
+            1.511877,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            28.427772
+          ]
+        },
+        {
+          "center": [
+            -20.399298,
+            1.511877,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            28.427772
+          ]
+        },
+        {
+          "center": [
+            -6.528345,
+            1.511877,
+            -9.56201
+          ],
+          "id": "corridor_0_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            6.303752
+          ]
+        },
+        {
+          "center": [
+            -6.528345,
+            1.511877,
+            5.271214
+          ],
+          "id": "corridor_0_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            14.885343
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.511877,
+            -8.297335
+          ],
+          "id": "corridor_1_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            8.833103
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.511877,
+            6.53589
+          ],
+          "id": "corridor_1_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            12.355992
+          ]
+        },
+        {
+          "center": [
+            6.528345,
+            1.511877,
+            -5.005778
+          ],
+          "id": "corridor_2_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            15.416217
+          ]
+        },
+        {
+          "center": [
+            6.528345,
+            1.511877,
+            9.827447
+          ],
+          "id": "corridor_2_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.624168,
+            3.023753,
+            5.772878
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.238677,
+        "floor_dynamic_friction": 0.414213,
+        "floor_static_friction": 0.456228,
+        "movement_speed_scale": 1.020939,
+        "obstacle_width": 2.842275,
+        "spawn_bearing_degrees": -58.570434,
+        "spawn_distance_range": [
+          8.631467,
+          27.064576
+        ],
+        "target_motion": "patrol",
+        "wall_height": 3.023753,
+        "wall_thickness": 0.624168
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550011,
+      "spawn_a": {
+        "position": [
+          16.562786,
+          1.0,
+          -4.063886
+        ],
+        "yaw_degrees": -58.570434
+      },
+      "spawn_b": {
+        "position": [
+          7.562786,
+          1.0,
+          1.436114
+        ],
+        "yaw_degrees": 121.429566
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 3773,
+        "occupancy_graph_sha256": "296a6b7bc304f4fb7899c67519dd71189cbe913919e6c687c5ef92c1ef55b449",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 3773,
+        "route_length_m": 14.5,
+        "spawn_distance_m": 10.547512,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        38.864466,
+        42.201693
+      ],
+      "family": "rooms_doorways",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          38.864466,
+          0.5,
+          42.201693
+        ]
+      },
+      "generation_attempt": 1,
+      "layout_sha256": "2e1be574f45b51da1fdd49a0902f3ad8462c2da320432cadbf3e27f04e14c6a7",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            2.34412,
+            21.349906
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            39.860706,
+            4.688241,
+            0.49812
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.34412,
+            -21.349906
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            39.860706,
+            4.688241,
+            0.49812
+          ]
+        },
+        {
+          "center": [
+            19.681293,
+            2.34412,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.49812,
+            4.688241,
+            42.201693
+          ]
+        },
+        {
+          "center": [
+            -19.681293,
+            2.34412,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.49812,
+            4.688241,
+            42.201693
+          ]
+        },
+        {
+          "center": [
+            -0.82927,
+            2.34412,
+            -6.792465
+          ],
+          "id": "room_vertical_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.49812,
+            4.688241,
+            25.616763
+          ]
+        },
+        {
+          "center": [
+            -0.82927,
+            2.34412,
+            14.30027
+          ],
+          "id": "room_vertical_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.49812,
+            4.688241,
+            10.601153
+          ]
+        },
+        {
+          "center": [
+            -9.880281,
+            2.34412,
+            -7.385296
+          ],
+          "id": "room_partition_left",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            16.103903,
+            4.688241,
+            0.49812
+          ]
+        },
+        {
+          "center": [
+            9.051012,
+            2.34412,
+            7.385296
+          ],
+          "id": "room_partition_right",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            17.762443,
+            4.688241,
+            0.49812
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 2.983777,
+        "floor_dynamic_friction": 0.76323,
+        "floor_static_friction": 0.704418,
+        "movement_speed_scale": 1.133588,
+        "obstacle_width": 2.144874,
+        "spawn_bearing_degrees": -91.218875,
+        "spawn_distance_range": [
+          9.869455,
+          25.138019
+        ],
+        "target_motion": "patrol",
+        "wall_height": 4.688241,
+        "wall_thickness": 0.49812
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550012,
+      "spawn_a": {
+        "position": [
+          12.217767,
+          1.0,
+          18.049153
+        ],
+        "yaw_degrees": -91.218875
+      },
+      "spawn_b": {
+        "position": [
+          -11.282233,
+          1.0,
+          17.549153
+        ],
+        "yaw_degrees": 88.781125
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 5745,
+        "occupancy_graph_sha256": "223c89887cda5501d9b62089ec923cebb0fa8eaf729cb39d6d115128c7edac21",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 5745,
+        "route_length_m": 128.0,
+        "spawn_distance_m": 23.505319,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        30.510348,
+        38.305534
+      ],
+      "family": "pillars_alternating_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          30.510348,
+          0.5,
+          38.305534
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "28367029eb9bae4270fb3fcc72758d343e0bb0c573b11b745b4e52b93bb892f4",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            2.308279,
+            19.521444
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            31.985056,
+            4.616557,
+            0.737354
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.308279,
+            -19.521444
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            31.985056,
+            4.616557,
+            0.737354
+          ]
+        },
+        {
+          "center": [
+            15.623851,
+            2.308279,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.737354,
+            4.616557,
+            38.305534
+          ]
+        },
+        {
+          "center": [
+            -15.623851,
+            2.308279,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.737354,
+            4.616557,
+            38.305534
+          ]
+        },
+        {
+          "center": [
+            -10.170116,
+            2.292457,
+            -15.322214
+          ],
+          "id": "pillar_0",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.883562,
+            4.584913,
+            1.883562
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            2.018319,
+            -15.322214
+          ],
+          "id": "pillar_1",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.662673,
+            4.036637,
+            1.662673
+          ]
+        },
+        {
+          "center": [
+            10.170116,
+            1.237535,
+            -15.322214
+          ],
+          "id": "pillar_2",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.633783,
+            2.47507,
+            1.633783
+          ]
+        },
+        {
+          "center": [
+            -5.085058,
+            1.141095,
+            -7.661107
+          ],
+          "id": "pillar_3",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.172351,
+            2.28219,
+            1.172351
+          ]
+        },
+        {
+          "center": [
+            5.085058,
+            2.04262,
+            -7.661107
+          ],
+          "id": "pillar_4",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.113894,
+            4.085241,
+            1.113894
+          ]
+        },
+        {
+          "center": [
+            -10.170116,
+            1.654876,
+            0.0
+          ],
+          "id": "pillar_5",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.408802,
+            3.309752,
+            1.408802
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.108248,
+            0.0
+          ],
+          "id": "pillar_6",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.751232,
+            2.216496,
+            1.751232
+          ]
+        },
+        {
+          "center": [
+            10.170116,
+            2.00663,
+            0.0
+          ],
+          "id": "pillar_7",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.620496,
+            4.013259,
+            1.620496
+          ]
+        },
+        {
+          "center": [
+            -5.085058,
+            1.119671,
+            7.661107
+          ],
+          "id": "pillar_8",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.726402,
+            2.239341,
+            1.726402
+          ]
+        },
+        {
+          "center": [
+            5.085058,
+            1.194737,
+            7.661107
+          ],
+          "id": "pillar_9",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.787148,
+            2.389474,
+            1.787148
+          ]
+        },
+        {
+          "center": [
+            -10.170116,
+            1.274644,
+            15.322214
+          ],
+          "id": "pillar_10",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.14083,
+            2.549289,
+            1.14083
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.343571,
+            15.322214
+          ],
+          "id": "pillar_11",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.344532,
+            2.687142,
+            1.344532
+          ]
+        },
+        {
+          "center": [
+            10.170116,
+            2.110374,
+            15.322214
+          ],
+          "id": "pillar_12",
+          "kind": "pillar",
+          "primitive": "box",
+          "size": [
+            1.690012,
+            4.220748,
+            1.690012
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 2.495501,
+        "floor_dynamic_friction": 0.445861,
+        "floor_static_friction": 0.295028,
+        "movement_speed_scale": 1.137154,
+        "obstacle_width": 1.913131,
+        "spawn_bearing_degrees": 67.833654,
+        "spawn_distance_range": [
+          9.475037,
+          19.318794
+        ],
+        "target_motion": "alternating_cover",
+        "wall_height": 4.616557,
+        "wall_thickness": 0.737354
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550013,
+      "spawn_a": {
+        "position": [
+          0.894826,
+          1.0,
+          -5.502767
+        ],
+        "yaw_degrees": 67.833654
+      },
+      "spawn_b": {
+        "position": [
+          14.394826,
+          1.0,
+          -0.002767
+        ],
+        "yaw_degrees": -112.166346
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 4006,
+        "occupancy_graph_sha256": "dd8113faf5c9f7b610862e5edcea88b2b29e80f264ff439c322235a815e2749f",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 4006,
+        "route_length_m": 19.0,
+        "spawn_distance_m": 14.57738,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        33.338629,
+        40.371515
+      ],
+      "family": "narrow_wide_transitions",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          33.338629,
+          0.5,
+          40.371515
+        ]
+      },
+      "generation_attempt": 1,
+      "layout_sha256": "59a3a708753b8a3d3954e1f2b97ec3bdfa3514b16aefc230acd5c4616a105f62",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.10795,
+            20.567783
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            34.866731,
+            2.2159,
+            0.764051
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.10795,
+            -20.567783
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            34.866731,
+            2.2159,
+            0.764051
+          ]
+        },
+        {
+          "center": [
+            17.05134,
+            1.10795,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.764051,
+            2.2159,
+            40.371515
+          ]
+        },
+        {
+          "center": [
+            -17.05134,
+            1.10795,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.764051,
+            2.2159,
+            40.371515
+          ]
+        },
+        {
+          "center": [
+            -1.760448,
+            1.10795,
+            -9.513103
+          ],
+          "id": "neck_-1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.764051,
+            2.2159,
+            18.34531
+          ]
+        },
+        {
+          "center": [
+            -5.307027,
+            1.10795,
+            9.172655
+          ],
+          "id": "wide_-1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.764051,
+            2.2159,
+            19.026205
+          ]
+        },
+        {
+          "center": [
+            1.760448,
+            1.10795,
+            -9.513103
+          ],
+          "id": "neck_1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.764051,
+            2.2159,
+            18.34531
+          ]
+        },
+        {
+          "center": [
+            5.307027,
+            1.10795,
+            9.172655
+          ],
+          "id": "wide_1",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.764051,
+            2.2159,
+            19.026205
+          ]
+        },
+        {
+          "center": [
+            -3.396497,
+            0.923975,
+            3.513632
+          ],
+          "id": "transition_cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.329849,
+            1.84795,
+            2.329849
+          ]
+        },
+        {
+          "center": [
+            3.396497,
+            0.976399,
+            1.769702
+          ],
+          "id": "transition_cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.329849,
+            1.952799,
+            2.329849
+          ]
+        },
+        {
+          "center": [
+            3.396497,
+            1.012968,
+            14.678872
+          ],
+          "id": "transition_cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.329849,
+            2.025935,
+            2.329849
+          ]
+        },
+        {
+          "center": [
+            -3.396497,
+            1.069788,
+            15.62519
+          ],
+          "id": "transition_cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.329849,
+            2.139576,
+            2.329849
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.10689,
+        "floor_dynamic_friction": 0.665661,
+        "floor_static_friction": 0.717719,
+        "movement_speed_scale": 1.025329,
+        "obstacle_width": 2.329849,
+        "spawn_bearing_degrees": 1.02303,
+        "spawn_distance_range": [
+          6.818884,
+          29.896421
+        ],
+        "target_motion": "strafe",
+        "wall_height": 2.2159,
+        "wall_thickness": 0.764051
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": true,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550014,
+      "spawn_a": {
+        "position": [
+          14.480685,
+          1.0,
+          -14.535758
+        ],
+        "yaw_degrees": 1.02303
+      },
+      "spawn_b": {
+        "position": [
+          14.980685,
+          1.0,
+          13.464242
+        ],
+        "yaw_degrees": -178.97697
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": true,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 4355,
+        "occupancy_graph_sha256": "d5b6dc964b97c5b838f31bb1014a63164d7db983f3e3c243ad39fbbba96c31b3",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 4355,
+        "route_length_m": 28.5,
+        "spawn_distance_m": 28.004464,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        42.794589,
+        29.754699
+      ],
+      "family": "open_scattered_cover",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          42.794589,
+          0.5,
+          29.754699
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "1013815cf7315d27cd2d07fe5c6348fed223268f4243ec8ad214ee84c452f5f1",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.401419,
+            15.077515
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            43.595253,
+            2.802838,
+            0.400332
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.401419,
+            -15.077515
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            43.595253,
+            2.802838,
+            0.400332
+          ]
+        },
+        {
+          "center": [
+            21.597461,
+            1.401419,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.400332,
+            2.802838,
+            29.754699
+          ]
+        },
+        {
+          "center": [
+            -21.597461,
+            1.401419,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.400332,
+            2.802838,
+            29.754699
+          ]
+        },
+        {
+          "center": [
+            0.339167,
+            1.066314,
+            -4.842477
+          ],
+          "id": "cover_0",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.185041,
+            2.132629,
+            1.77766
+          ]
+        },
+        {
+          "center": [
+            -8.003405,
+            1.027953,
+            3.928102
+          ],
+          "id": "cover_1",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.728856,
+            2.055906,
+            2.371617
+          ]
+        },
+        {
+          "center": [
+            -10.444713,
+            0.99055,
+            5.887362
+          ],
+          "id": "cover_2",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.299038,
+            1.9811,
+            1.515046
+          ]
+        },
+        {
+          "center": [
+            -11.151846,
+            1.372017,
+            -10.750367
+          ],
+          "id": "cover_3",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.560146,
+            2.744033,
+            1.330033
+          ]
+        },
+        {
+          "center": [
+            -7.911458,
+            1.068385,
+            7.719482
+          ],
+          "id": "cover_4",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.205584,
+            2.136771,
+            1.708412
+          ]
+        },
+        {
+          "center": [
+            -6.425986,
+            1.12573,
+            -7.195329
+          ],
+          "id": "cover_5",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.264677,
+            2.251461,
+            2.559579
+          ]
+        },
+        {
+          "center": [
+            -0.511745,
+            1.305847,
+            8.167198
+          ],
+          "id": "cover_6",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            2.12313,
+            2.611693,
+            1.412741
+          ]
+        },
+        {
+          "center": [
+            2.439608,
+            1.361715,
+            -6.179842
+          ],
+          "id": "cover_7",
+          "kind": "cover",
+          "primitive": "box",
+          "size": [
+            1.842132,
+            2.72343,
+            1.221786
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 3.970624,
+        "floor_dynamic_friction": 0.691026,
+        "floor_static_friction": 0.696674,
+        "movement_speed_scale": 1.055566,
+        "obstacle_width": 1.480554,
+        "spawn_bearing_degrees": -126.158185,
+        "spawn_distance_range": [
+          9.645483,
+          19.248451
+        ],
+        "target_motion": "stationary",
+        "wall_height": 2.802838,
+        "wall_thickness": 0.400332
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550015,
+      "spawn_a": {
+        "position": [
+          -3.247295,
+          1.0,
+          7.772651
+        ],
+        "yaw_degrees": -126.158185
+      },
+      "spawn_b": {
+        "position": [
+          -16.247295,
+          1.0,
+          -1.727349
+        ],
+        "yaw_degrees": 53.841815
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 4437,
+        "occupancy_graph_sha256": "5ec76fe54f1aa0b722398e0e547ef8a58b993173ea77bcbea4ea30cda279d5dc",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 4437,
+        "route_length_m": 22.5,
+        "spawn_distance_m": 16.101242,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        36.494286,
+        43.994696
+      ],
+      "family": "parallel_corridors",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          36.494286,
+          0.5,
+          43.994696
+        ]
+      },
+      "generation_attempt": 0,
+      "layout_sha256": "5c8516eed7553c323317ffd0a5ed301c0694593e0cbca0627261e862b45b9243",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.949417,
+            22.340388
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            37.866448,
+            3.898833,
+            0.686081
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.949417,
+            -22.340388
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            37.866448,
+            3.898833,
+            0.686081
+          ]
+        },
+        {
+          "center": [
+            18.590184,
+            1.949417,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            43.994696
+          ]
+        },
+        {
+          "center": [
+            -18.590184,
+            1.949417,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            43.994696
+          ]
+        },
+        {
+          "center": [
+            -5.930321,
+            1.949417,
+            -9.777644
+          ],
+          "id": "corridor_0_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            21.439409
+          ]
+        },
+        {
+          "center": [
+            -5.930321,
+            1.949417,
+            12.914879
+          ],
+          "id": "corridor_0_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            15.164938
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.949417,
+            -10.221058
+          ],
+          "id": "corridor_1_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            20.552579
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.949417,
+            12.471464
+          ],
+          "id": "corridor_1_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            16.051768
+          ]
+        },
+        {
+          "center": [
+            5.930321,
+            1.949417,
+            -7.225625
+          ],
+          "id": "corridor_2_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            26.543446
+          ]
+        },
+        {
+          "center": [
+            5.930321,
+            1.949417,
+            15.466897
+          ],
+          "id": "corridor_2_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.686081,
+            3.898833,
+            10.060901
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.390349,
+        "floor_dynamic_friction": 0.319393,
+        "floor_static_friction": 0.789315,
+        "movement_speed_scale": 1.095451,
+        "obstacle_width": 2.806988,
+        "spawn_bearing_degrees": -72.255328,
+        "spawn_distance_range": [
+          5.918094,
+          19.601011
+        ],
+        "target_motion": "strafe",
+        "wall_height": 3.898833,
+        "wall_thickness": 0.686081
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550016,
+      "spawn_a": {
+        "position": [
+          4.402857,
+          1.0,
+          -17.847348
+        ],
+        "yaw_degrees": -72.255328
+      },
+      "spawn_b": {
+        "position": [
+          -8.097143,
+          1.0,
+          -13.847348
+        ],
+        "yaw_degrees": 107.744672
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 5174,
+        "occupancy_graph_sha256": "c1fced6c490fe27eafb5e9a27dc1754837fb8ab6a6bca40199676c3cd1b13a97",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 5174,
+        "route_length_m": 23.5,
+        "spawn_distance_m": 13.124405,
+        "status": "PASS"
+      }
+    },
+    {
+      "arena_size": [
+        43.507251,
+        40.493082
+      ],
+      "family": "rooms_doorways",
+      "floor": {
+        "center": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "primitive": "box",
+        "size": [
+          43.507251,
+          0.5,
+          40.493082
+        ]
+      },
+      "generation_attempt": 1,
+      "layout_sha256": "82b161ae127af9b099e1f6ebc122e5eab252325f273fa628896ed3d0bde5a7e1",
+      "obstacles": [
+        {
+          "center": [
+            0.0,
+            1.238673,
+            20.578246
+          ],
+          "id": "perimeter_n",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            44.834071,
+            2.477346,
+            0.66341
+          ]
+        },
+        {
+          "center": [
+            0.0,
+            1.238673,
+            -20.578246
+          ],
+          "id": "perimeter_s",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            44.834071,
+            2.477346,
+            0.66341
+          ]
+        },
+        {
+          "center": [
+            22.08533,
+            1.238673,
+            0.0
+          ],
+          "id": "perimeter_e",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.66341,
+            2.477346,
+            40.493082
+          ]
+        },
+        {
+          "center": [
+            -22.08533,
+            1.238673,
+            0.0
+          ],
+          "id": "perimeter_w",
+          "kind": "boundary",
+          "primitive": "box",
+          "size": [
+            0.66341,
+            2.477346,
+            40.493082
+          ]
+        },
+        {
+          "center": [
+            1.30655,
+            1.238673,
+            -6.071255
+          ],
+          "id": "room_vertical_lo",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.66341,
+            2.477346,
+            25.350573
+          ]
+        },
+        {
+          "center": [
+            1.30655,
+            1.238673,
+            14.775487
+          ],
+          "id": "room_vertical_hi",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            0.66341,
+            2.477346,
+            7.942108
+          ]
+        },
+        {
+          "center": [
+            -10.01439,
+            1.238673,
+            -7.086289
+          ],
+          "id": "room_partition_left",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            20.47847,
+            2.477346,
+            0.66341
+          ]
+        },
+        {
+          "center": [
+            11.32094,
+            1.238673,
+            7.086289
+          ],
+          "id": "room_partition_right",
+          "kind": "wall",
+          "primitive": "box",
+          "size": [
+            17.865371,
+            2.477346,
+            0.66341
+          ]
+        }
+      ],
+      "parameters": {
+        "doorway_width": 4.200401,
+        "floor_dynamic_friction": 0.282022,
+        "floor_static_friction": 0.449568,
+        "movement_speed_scale": 0.986462,
+        "obstacle_width": 1.360966,
+        "spawn_bearing_degrees": 38.233825,
+        "spawn_distance_range": [
+          9.626457,
+          26.2487
+        ],
+        "target_motion": "alternating_cover",
+        "wall_height": 2.477346,
+        "wall_thickness": 0.66341
+      },
+      "privileged_connectivity_only": {
+        "actor_visible": false,
+        "kind": "occupancy_graph",
+        "may_drive": [
+          "layout_validation",
+          "privileged_teacher"
+        ]
+      },
+      "requested_initial_los": false,
+      "schema_version": "phase5_procedural_layout_v001",
+      "seed": 550017,
+      "spawn_a": {
+        "position": [
+          -9.603625,
+          1.0,
+          2.903459
+        ],
+        "yaw_degrees": 38.233825
+      },
+      "spawn_b": {
+        "position": [
+          3.396375,
+          1.0,
+          19.403459
+        ],
+        "yaw_degrees": -141.766175
+      },
+      "split": "validation",
+      "validation": {
+        "actual_initial_los": false,
+        "checks": {
+          "collision_free_route_exists": true,
+          "no_immediate_overlap": true,
+          "no_obstacle_overlap": true,
+          "no_unreachable_sealed_pockets": true,
+          "primitive_colliders_only": true,
+          "requested_los_satisfied": true,
+          "spawn_a_valid_floor": true,
+          "spawn_b_valid_floor": true
+        },
+        "free_cells": 6151,
+        "occupancy_graph_sha256": "e5eb3749a0b729ca84d6e2c69e0e28694d430036d6b264695e94ccddc6a10ff4",
+        "occupancy_resolution_m": 0.5,
+        "reachable_free_cells": 6151,
+        "route_length_m": 29.5,
+        "spawn_distance_m": 21.005952,
+        "status": "PASS"
+      }
+    }
+  ],
+  "manifest_sha256": "fc3c432a17b80290ef04b6df30acc07bbd5ed065ea487dc5995c7e7b4916b777",
+  "schema_version": "phase5_procedural_layout_suite_v001",
+  "seed_count": 18,
+  "seeds": [
+    550000,
+    550001,
+    550002,
+    550003,
+    550004,
+    550005,
+    550006,
+    550007,
+    550008,
+    550009,
+    550010,
+    550011,
+    550012,
+    550013,
+    550014,
+    550015,
+    550016,
+    550017
+  ],
+  "split": "validation",
+  "split_policy": {
+    "heldout_percent": 15,
+    "total_seed_count": 120,
+    "train_percent": 70,
+    "validation_percent": 15
+  }
+}

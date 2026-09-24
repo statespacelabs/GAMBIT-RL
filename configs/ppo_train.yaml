@@ -1,0 +1,52 @@
+# RL-GRADER Phase 3A — PPO Self-Play Config (repair/gated mode)
+
+# Environment
+env_path: ""  # Set to Unity build path on gpu-30
+
+# Gating
+enable_ppo: false
+rollout_smoke_steps: 100
+freeze_pretrained_branches: true
+max_preupdate_clip_frac: 0.001
+
+# Hyperparameters
+num_iterations: 50
+rollout_steps: 4096
+seq_len: 16
+ppo_epochs: 4
+batch_size: 8
+ppo_clip: 0.1
+gamma: 0.99
+gae_lambda: 0.95
+lr: 0.0003
+max_grad_norm: 1.0
+
+# Loss Coefficients
+entropy_coef: 0.003
+value_coef: 0.5
+kl_anchor_coef: 0.05
+smooth_coef: 0.02
+
+# Reward (obs indices for damage — set from Unity contract)
+damage_dealt_obs_index: null
+damage_taken_obs_index: null
+require_damage_signals: false
+env_reward_coef: 1.0
+damage_dealt_coef: 1.0
+damage_taken_coef: 1.0
+kill_coef: 0.5
+death_coef: 0.5
+miss_coef: 0.05
+jerk_coef: 0.01
+spam_coef: 0.01
+
+# Evaluation & Promotion
+eval_interval: 50
+promote_win_rate: 0.55
+
+# Paths
+registry_dir: "experiments/phase3/registry"
+log_dir: "experiments/phase3/ppo/logs"
+
+# System
+device: "cpu"

@@ -1,0 +1,4 @@
+# Minimal dependencies for recorded tournament replay and Bayesian assessment.
+# Training dependencies are in pyproject.toml's training extra.
+numpy>=1.23.5,<3
+

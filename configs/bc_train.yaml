@@ -1,0 +1,48 @@
+# RL-GRADER Phase 2 — Behavior Cloning Training Config
+# Target: gpu-30
+
+# --- Dataset Paths ---
+transition_manifest_path: "artifacts/demonstrations/transitions/manifests/phase2_transition_manifest.csv"
+action_scaler_path: "artifacts/demonstrations/transitions/scalers/action_scaler.npz"
+state_scaler_path: ""  # Empty because we use pre-normalized z_norm from latent files
+reward_stats_path: "artifacts/demonstrations/transitions/rewards/reward_stats.json"
+
+# --- Model Dimensions ---
+state_dim: 512
+action_dim: 14
+hidden_dim: 1024
+num_hidden_layers: 3
+dropout: 0.1
+
+# --- Action Dims Schema ---
+# move_x_mean, move_y_mean, look_dx_sum, look_dy_sum, look_dx_mean, look_dy_mean, look_speed_mean
+continuous_indices: [0, 1, 2, 3, 4, 5, 6]
+# shoot_pressed, reload_pressed, jump_pressed, crouch_pressed
+binary_indices: [8, 9, 10, 11]
+# shoot_count, targeted_action_count, action_count
+count_indices: [7, 12, 13]
+
+# --- Normalization ---
+normalize_state: false   # Already using z_norm
+normalize_action: true   # Normalize continuous action outputs
+normalize_reward: false
+
+# --- Optimizer & Training Duration ---
+batch_size: 256
+lr: 0.0003
+weight_decay: 0.0001
+grad_clip_norm: 1.0
+binary_loss_weight: 1.0
+
+epochs: 50
+steps_per_epoch: 1000
+val_every_epochs: 1
+patience: 8
+
+# --- Logging & Checkpoints ---
+checkpoint_dir: "experiments/phase2/bc/checkpoints"
+log_dir: "experiments/phase2/bc/logs"
+
+num_workers: 4
+device: "cuda"
+seed: 42

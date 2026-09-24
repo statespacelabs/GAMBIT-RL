@@ -1,0 +1,38 @@
+{
+  "content_sha256": "0e65b1e3156110f5fc2254e0847126a2c8e632536460f4a6768682036d2f271b",
+  "dim": 132,
+  "groups": [
+    {
+      "definition": "Policy-owned one-hot patrol/investigate/combat/recovery state mirrored from the actor observation.",
+      "dim": 4,
+      "name": "tactical_mode",
+      "offset": 0,
+      "range": [
+        0,
+        1
+      ],
+      "source": "policy"
+    },
+    {
+      "definition": "Policy-owned recurrent hidden state. Reset on new life, environment reset and reset-generation change; never generated from privileged Unity state.",
+      "dim": 128,
+      "name": "gru_hidden",
+      "offset": 4,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "policy"
+    }
+  ],
+  "kind": "policy_recurrent_state",
+  "ownership": "policy runtime, not Unity sensor",
+  "privileged_inputs_allowed": false,
+  "reset_contract": [
+    "new_life",
+    "environment_reset",
+    "reset_generation_change"
+  ],
+  "schema_id": "phase5_tactical_state_v001",
+  "version": 1
+}

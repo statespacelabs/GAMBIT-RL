@@ -1,0 +1,129 @@
+{
+  "absolute_coordinates_present": false,
+  "actor_prefix_dim": 231,
+  "actor_prefix_schema": "phase5_actor_obs_v001",
+  "content_sha256": "1a0e1b81d90a89a248ab1821cdbe61aea5f3a2f1a97fa2d9d37cb6094086caee",
+  "deployment_allowed": false,
+  "dim": 428,
+  "export_gate": "No field at or beyond privileged_extension_offset may reach the actor ONNX/export graph.",
+  "groups": [
+    {
+      "definition": "Exact current enemy relative xyz in actor coordinates.",
+      "dim": 3,
+      "name": "exact_enemy_position_local",
+      "offset": 363,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Exact current enemy relative velocity in actor coordinates.",
+      "dim": 3,
+      "name": "exact_enemy_velocity_local",
+      "offset": 366,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Exact current enemy forward direction in actor coordinates.",
+      "dim": 3,
+      "name": "exact_enemy_forward_local",
+      "offset": 369,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Enemy health, ammo and cooldown fractions.",
+      "dim": 3,
+      "name": "exact_enemy_combat_state",
+      "offset": 372,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Exact Euclidean separation normalized by 100 m.",
+      "dim": 1,
+      "name": "true_euclidean_distance",
+      "offset": 375,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Optional NavMesh path distance normalized by 200 m plus validity bit.",
+      "dim": 2,
+      "name": "geodesic_distance",
+      "offset": 376,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Unmasked exact LOS bit.",
+      "dim": 1,
+      "name": "exact_line_of_sight",
+      "offset": 378,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Normalized static overlap/contact counts in 16 actor-relative sectors.",
+      "dim": 16,
+      "name": "full_collision_sector_counts",
+      "offset": 379,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Unquantized normalized 32-ray torso clearance vector.",
+      "dim": 32,
+      "name": "full_static_clearance",
+      "offset": 395,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    },
+    {
+      "definition": "Optional NavMesh oracle corner count normalized by 32.",
+      "dim": 1,
+      "name": "navmesh_path_corner_count",
+      "offset": 427,
+      "range": [
+        0,
+        1
+      ],
+      "source": "critic_teacher_only"
+    }
+  ],
+  "kind": "privileged_critic_teacher_observation",
+  "map_identifiers_present": false,
+  "privileged_extension_dim": 65,
+  "privileged_extension_offset": 363,
+  "schema_id": "phase5_privileged_critic_obs_v001",
+  "tactical_state_dim": 132,
+  "tactical_state_schema": "phase5_tactical_state_v001",
+  "version": 1
+}

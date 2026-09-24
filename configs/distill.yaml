@@ -1,0 +1,41 @@
+# RL-GRADER Phase 3A — Distillation Config (debug data)
+
+# Data paths (Phase 2 debug dataset)
+transition_manifest_path: "data/phase2_debug/manifests/phase2_transition_manifest.csv"
+window_manifest_path: "data/phase3/window_manifest_with_tel.csv"
+action_scaler_path: ""
+phase1_ckpt: "data/phase2_debug/checkpoint/best_checkpoint.pt"
+
+# Telemetry processing
+telemetry_fps: 30.0
+action_step_seconds: 1.0
+max_move_speed: 6.0
+max_yaw_delta: 180.0
+max_pitch_delta: 180.0
+require_normalized_telemetry: true
+
+# Model dims
+obs_dim: 45
+action_dim: 8
+hidden_dim: 256
+num_layers: 3
+
+# Training
+batch_size: 32
+lr: 0.0003
+weight_decay: 0.0001
+epochs: 5
+warmup_epochs: 2
+grad_clip_norm: 1.0
+
+# Recurrent BC warmup
+recurrent_epochs: 5
+force_retrain: true
+
+# Paths
+checkpoint_dir: "experiments/phase3/distill/checkpoints"
+log_dir: "experiments/phase3/distill/logs"
+
+# System
+num_workers: 0
+device: "cpu"

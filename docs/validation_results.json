@@ -1,0 +1,62 @@
+{
+  "tests": {
+    "passed": 29,
+    "failed": 0
+  },
+  "calibration": {
+    "matches": 2640,
+    "max_mu_difference": 1.1368683772161603e-13,
+    "max_sigma_difference": 4.831690603168681e-13,
+    "all_candidate_roles_match": true,
+    "payoff_csv_byte_identical": true,
+    "audit": {
+      "audited_matches": 2640,
+      "candidate_count": 12,
+      "damage_complete": true,
+      "dense_reward_used_for_payoff": false,
+      "expected_matches": 2640,
+      "failures": [],
+      "final_heldout_used": false,
+      "layout_family": "rooms_doorways",
+      "schema_version": "phase6_cuda_examiner_technical_audit_v001",
+      "status": "PASS",
+      "terminal_payoff_source": "unity_terminal_event_only"
+    }
+  },
+  "posterior": {
+    "prior_mean": 1000.0,
+    "prior_sd": 343.19516830387903,
+    "win_mean": 1203.7688780067112,
+    "loss_mean": 796.231121993289,
+    "positive_eig": true,
+    "immediate_repeat_prevented": true
+  },
+  "environment": {
+    "numpy": "2.4.1",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "pandas": "3.0.0",
+    "pytest": "9.1.1",
+    "PyYAML": "6.0.3",
+    "setuptools": "80.10.1"
+  },
+  "recorded_replay_environment": {
+    "python": "3.12.3",
+    "numpy": "1.26.4"
+  },
+  "cli_validation": {
+    "argument_driven_entry_points_passed": 24,
+    "fixed_orchestrators_without_help_parser": [
+      "train_reacquisition_curriculum",
+      "train_peeking_curriculum",
+      "train_navigation_population"
+    ]
+  },
+  "packaging": {
+    "editable_install": true,
+    "source_distribution_build": true,
+    "wheel_build": true,
+    "all_199_ported_files_in_sdist_with_matching_hashes": true,
+    "documentation_links_valid": true
+  }
+}

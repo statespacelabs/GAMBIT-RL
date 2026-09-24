@@ -1,0 +1,31 @@
+{
+    "schema_version": "phase5_procedural_layout_runtime_audit_v001",
+    "status": "PASS",
+    "manifest_path": "/home/amd/RL-GRADER/experiments/phase5_map_general_headless_hunter/02_layouts/HELDOUT_LAYOUTS.json",
+    "manifest_sha256": "68cdbc7ce8d40ce57e9b820ece3e2bca5a224f4231796c57a852ed3713eacba3",
+    "split": "heldout",
+    "area_count": 1,
+    "actor_connectivity_access": false,
+    "areas": [
+        {
+            "area_id": 0,
+            "seed": 560000,
+            "family": "u_traps_dead_ends",
+            "status": "PASS",
+            "floor_below_a": true,
+            "floor_below_b": true,
+            "spawn_a_obstacle_clear": true,
+            "spawn_b_obstacle_clear": true,
+            "players_not_overlapping": true,
+            "requested_initial_los": true,
+            "actual_initial_los": true,
+            "requested_los_satisfied": true,
+            "collider_count_matches": true,
+            "collider_count": 11,
+            "frozen_connectivity_proof_passed": true,
+            "movement_speed_scale": 0.9956459999084473,
+            "target_motion": "stationary"
+        }
+    ],
+    "failure_reason": ""
+}

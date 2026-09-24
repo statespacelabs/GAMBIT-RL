@@ -1,0 +1,791 @@
+{
+  "artifacts": {
+    "hash_ledger": "BOT_BANK_HASHES.sha256",
+    "pair_diagnostics": "02_analysis/PAIR_DIAGNOSTICS.csv",
+    "payoff_matrix": "BOT_PAYOFF_MATRIX.csv",
+    "ratings": "BOT_RATINGS_CUDA.json",
+    "report": "BOT_CALIBRATION_REPORT.md",
+    "selection_audit": "02_analysis/SELECTION_AUDIT.json",
+    "technical_audit": "02_analysis/TECHNICAL_AUDIT.json"
+  },
+  "bots": [
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 1137.5870410087177,
+        "bayesian_sigma": 102.428012877546,
+        "contact_rate": 0.8636363636363636,
+        "damage_against_mean": 40.31818181818182,
+        "damage_for_mean": 75.5909090909091,
+        "draws": 94,
+        "duration_seconds_mean": 13.826681775613633,
+        "empirical_score": 0.6931818181818182,
+        "env_applied_action_saturation_mean": 0.0010833054330839343,
+        "global_physical_side_delta": 0.10909090909090902,
+        "losses": 88,
+        "matches": 440,
+        "max_pair_score": 0.875,
+        "max_pair_side_score_delta": 0.625,
+        "min_pair_score": 0.48750000000000004,
+        "mu_action_saturation_mean": 0.0011651507573355137,
+        "physical_a_score": 0.7477272727272727,
+        "physical_b_score": 0.6386363636363637,
+        "sampled_action_saturation_mean": 0.0010822702919898734,
+        "timeout_rate": 0.21363636363636362,
+        "wins": 258
+      },
+      "candidate_class": "learned_or_hybrid",
+      "canonical_id": "bank_original_combat_expert",
+      "checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "checkpoint_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "isolates contact-to-kill conversion from navigation",
+      "difficulty_parameters": {
+        "action_mode": "deterministic",
+        "sampling_temperature": 0.0,
+        "training_updates": 0
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "phase4_visible_combat_only",
+      "model_or_controller_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 1137.5870410087177,
+        "sigma": 102.428012877546
+      },
+      "role": "primary",
+      "style": "humanlike stationary contact duelist; intentionally weak hunt"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 1058.0166931326353,
+        "bayesian_sigma": 102.27982752311749,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 63.63636363636363,
+        "damage_for_mean": 69.81818181818181,
+        "draws": 25,
+        "duration_seconds_mean": 7.7511362812727285,
+        "empirical_score": 0.5829545454545455,
+        "env_applied_action_saturation_mean": 0.024498855652869533,
+        "global_physical_side_delta": 0.26590909090909093,
+        "losses": 171,
+        "matches": 440,
+        "max_pair_score": 0.6875,
+        "max_pair_side_score_delta": 0.75,
+        "min_pair_score": 0.375,
+        "mu_action_saturation_mean": 0.02467014464731995,
+        "physical_a_score": 0.45,
+        "physical_b_score": 0.7159090909090909,
+        "sampled_action_saturation_mean": 0.024498855652869533,
+        "timeout_rate": 0.056818181818181816,
+        "wins": 244
+      },
+      "candidate_class": "parametric_anchor",
+      "canonical_id": "bank_anchor_face_shooter",
+      "checkpoint": "experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+      "checkpoint_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "pure visible aim-and-fire conversion floor",
+      "difficulty_parameters": {
+        "forward": 0.0,
+        "max_look": 0.8,
+        "shoot_threshold_deg": 14.0,
+        "strafe": 0.0,
+        "switch_period_decisions": 48
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "fair_parametric_anchor",
+      "model_or_controller_sha256": "fd9cbe70601a21c12a6c0e1204f1d00c64f18b811ddc58d6f2152bbff74a0f44",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 1058.0166931326353,
+        "sigma": 102.27982752311749
+      },
+      "role": "primary",
+      "style": "stationary precision face shooter"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 1022.2214417917976,
+        "bayesian_sigma": 102.25596577854768,
+        "contact_rate": 0.8636363636363636,
+        "damage_against_mean": 48.81818181818182,
+        "damage_for_mean": 51.59090909090909,
+        "draws": 155,
+        "duration_seconds_mean": 16.2649999665,
+        "empirical_score": 0.5306818181818181,
+        "env_applied_action_saturation_mean": 0.030457670629243733,
+        "global_physical_side_delta": 0.2568181818181818,
+        "losses": 129,
+        "matches": 440,
+        "max_pair_score": 0.7375,
+        "max_pair_side_score_delta": 0.5,
+        "min_pair_score": 0.25,
+        "mu_action_saturation_mean": 0.00023357448565058847,
+        "physical_a_score": 0.6590909090909091,
+        "physical_b_score": 0.4022727272727273,
+        "sampled_action_saturation_mean": 0.0,
+        "timeout_rate": 0.3522727272727273,
+        "wins": 156
+      },
+      "candidate_class": "learned_or_hybrid",
+      "canonical_id": "bank_phase5_peeker",
+      "checkpoint": "09_champion/frozen/phase5_peeker.pt",
+      "checkpoint_sha256": "b28eb5f85cacce5c53d34312a8688900bba552d30100793160cd09d194b00aa8",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "tests cover interaction, patience, and reacquisition",
+      "difficulty_parameters": {
+        "action_mode": "deterministic",
+        "sampling_temperature": 0.0,
+        "training_updates": 0
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "phase5_hybrid_navigator_combat",
+      "model_or_controller_sha256": "b28eb5f85cacce5c53d34312a8688900bba552d30100793160cd09d194b00aa8",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 1022.2214417917976,
+        "sigma": 102.25596577854768
+      },
+      "role": "primary",
+      "style": "cautious cover-heavy peeker"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 1014.5000367006937,
+        "bayesian_sigma": 102.25400867546821,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 63.81818181818182,
+        "damage_for_mean": 68.31818181818181,
+        "draws": 15,
+        "duration_seconds_mean": 8.242090801545453,
+        "empirical_score": 0.5193181818181818,
+        "env_applied_action_saturation_mean": 0.029734873970658084,
+        "global_physical_side_delta": 0.2204545454545454,
+        "losses": 204,
+        "matches": 440,
+        "max_pair_score": 0.95,
+        "max_pair_side_score_delta": 0.75,
+        "min_pair_score": 0.375,
+        "mu_action_saturation_mean": 0.0034717072878394555,
+        "physical_a_score": 0.4090909090909091,
+        "physical_b_score": 0.6295454545454545,
+        "sampled_action_saturation_mean": 0.003106977747955293,
+        "timeout_rate": 0.03409090909090909,
+        "wins": 221
+      },
+      "candidate_class": "learned_or_hybrid",
+      "canonical_id": "bank_phase4_generalist",
+      "checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/gvg_generalist_roster_mix/checkpoints/snapshot_s050_u0050.pt",
+      "checkpoint_sha256": "b75beb4af9fe7ad244a6bacae65b2eb91861f44746a31bac0633985283cef20e",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/gvg_generalist_roster_mix/checkpoints/snapshot_s050_u0050.pt",
+      "combat_sha256": "b75beb4af9fe7ad244a6bacae65b2eb91861f44746a31bac0633985283cef20e",
+      "diagnostic_purpose": "broad combat and reacquisition benchmark",
+      "difficulty_parameters": {
+        "action_mode": "deterministic",
+        "sampling_temperature": 0.0,
+        "training_updates": 0
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "phase4_fair_search_combat",
+      "model_or_controller_sha256": "b75beb4af9fe7ad244a6bacae65b2eb91861f44746a31bac0633985283cef20e",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 1014.5000367006937,
+        "sigma": 102.25400867546821
+      },
+      "role": "primary",
+      "style": "balanced roster generalist with fair hidden search"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 1009.8710723145845,
+        "bayesian_sigma": 102.2533696025148,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 67.5,
+        "damage_for_mean": 57.81818181818182,
+        "draws": 51,
+        "duration_seconds_mean": 9.920681735,
+        "empirical_score": 0.5125,
+        "env_applied_action_saturation_mean": 0.02969409433201044,
+        "global_physical_side_delta": 0.12499999999999994,
+        "losses": 189,
+        "matches": 440,
+        "max_pair_score": 0.675,
+        "max_pair_side_score_delta": 0.5,
+        "min_pair_score": 0.375,
+        "mu_action_saturation_mean": 0.029824981302889294,
+        "physical_a_score": 0.45,
+        "physical_b_score": 0.575,
+        "sampled_action_saturation_mean": 0.02969409433201044,
+        "timeout_rate": 0.1159090909090909,
+        "wins": 200
+      },
+      "candidate_class": "parametric_anchor",
+      "canonical_id": "bank_anchor_kiter",
+      "checkpoint": "experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+      "checkpoint_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "pursuit and evasive-target diagnostic",
+      "difficulty_parameters": {
+        "forward": -0.55,
+        "max_look": 0.8,
+        "shoot_threshold_deg": 16.0,
+        "strafe": 0.3,
+        "switch_period_decisions": 72
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "fair_parametric_anchor",
+      "model_or_controller_sha256": "b13b87dd3c6155aba7056ffba138c33b4ec7b82256e8ae0796ae7b8cb9ef820d",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 1009.8710723145845,
+        "sigma": 102.2533696025148
+      },
+      "role": "primary",
+      "style": "backpedaling evasive kiter"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 989.8089921758278,
+        "bayesian_sigma": 102.25521016789263,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 63.04545454545455,
+        "damage_for_mean": 66.95454545454545,
+        "draws": 25,
+        "duration_seconds_mean": 8.524136288931818,
+        "empirical_score": 0.48295454545454547,
+        "env_applied_action_saturation_mean": 0.029543182151483962,
+        "global_physical_side_delta": 0.14772727272727265,
+        "losses": 215,
+        "matches": 440,
+        "max_pair_score": 0.925,
+        "max_pair_side_score_delta": 0.5,
+        "min_pair_score": 0.125,
+        "mu_action_saturation_mean": 0.0034674368464468887,
+        "physical_a_score": 0.4090909090909091,
+        "physical_b_score": 0.5568181818181818,
+        "sampled_action_saturation_mean": 0.003148282857346863,
+        "timeout_rate": 0.056818181818181816,
+        "wins": 200
+      },
+      "candidate_class": "learned_or_hybrid",
+      "canonical_id": "bank_phase4_anti_strafe",
+      "checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/gvg_anti_strafe_pressure/checkpoints/snapshot_s030_u0030.pt",
+      "checkpoint_sha256": "78343458d203d238b2077d72faeb135e7681c15851d3d384cbaef1a1e8481108",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/gvg_anti_strafe_pressure/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "78343458d203d238b2077d72faeb135e7681c15851d3d384cbaef1a1e8481108",
+      "diagnostic_purpose": "tests lateral movement and anti-strafe robustness",
+      "difficulty_parameters": {
+        "action_mode": "deterministic",
+        "sampling_temperature": 0.0,
+        "training_updates": 0
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "phase4_fair_search_combat",
+      "model_or_controller_sha256": "78343458d203d238b2077d72faeb135e7681c15851d3d384cbaef1a1e8481108",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 989.8089921758278,
+        "sigma": 102.25521016789263
+      },
+      "role": "primary",
+      "style": "anti-strafe pressure specialist with fair hidden search"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 852.5831693441221,
+        "bayesian_sigma": 102.48194170791895,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 78.31818181818181,
+        "damage_for_mean": 47.68181818181818,
+        "draws": 37,
+        "duration_seconds_mean": 9.405545359181819,
+        "empirical_score": 0.29204545454545455,
+        "env_applied_action_saturation_mean": 0.025724287681451682,
+        "global_physical_side_delta": 0.006818181818181834,
+        "losses": 293,
+        "matches": 440,
+        "max_pair_score": 0.6,
+        "max_pair_side_score_delta": 0.275,
+        "min_pair_score": 0.075,
+        "mu_action_saturation_mean": 0.02584506615043028,
+        "physical_a_score": 0.29545454545454547,
+        "physical_b_score": 0.28863636363636364,
+        "sampled_action_saturation_mean": 0.025724287681451682,
+        "timeout_rate": 0.08409090909090909,
+        "wins": 110
+      },
+      "candidate_class": "parametric_anchor",
+      "canonical_id": "bank_anchor_strafe_shooter",
+      "checkpoint": "experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+      "checkpoint_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "lateral tracking and conversion anchor",
+      "difficulty_parameters": {
+        "forward": 0.0,
+        "max_look": 0.8,
+        "shoot_threshold_deg": 18.0,
+        "strafe": 0.65,
+        "switch_period_decisions": 48
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "fair_parametric_anchor",
+      "model_or_controller_sha256": "22a4b20d824b5e2041ef26876313d889e49a0ef5c5f32d801d8847fb8ad26a96",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 852.5831693441221,
+        "sigma": 102.48194170791895
+      },
+      "role": "primary",
+      "style": "periodic lateral strafe shooter"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 802.1712768876916,
+        "bayesian_sigma": 102.68016752359155,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 81.18181818181819,
+        "damage_for_mean": 38.18181818181818,
+        "draws": 48,
+        "duration_seconds_mean": 10.141954443886364,
+        "empirical_score": 0.2318181818181818,
+        "env_applied_action_saturation_mean": 0.023954739683317853,
+        "global_physical_side_delta": 0.04545454545454544,
+        "losses": 314,
+        "matches": 440,
+        "max_pair_score": 0.4125,
+        "max_pair_side_score_delta": 0.39999999999999997,
+        "min_pair_score": 0.05,
+        "mu_action_saturation_mean": 0.024060393407962767,
+        "physical_a_score": 0.20909090909090908,
+        "physical_b_score": 0.2545454545454545,
+        "sampled_action_saturation_mean": 0.023954739683317853,
+        "timeout_rate": 0.10909090909090909,
+        "wins": 78
+      },
+      "candidate_class": "parametric_anchor",
+      "canonical_id": "bank_anchor_cover_sweeper",
+      "checkpoint": "experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+      "checkpoint_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "angle change and cover reacquisition diagnostic",
+      "difficulty_parameters": {
+        "forward": 0.15,
+        "max_look": 0.8,
+        "shoot_threshold_deg": 18.0,
+        "strafe": 0.75,
+        "switch_period_decisions": 96
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "fair_parametric_anchor",
+      "model_or_controller_sha256": "91348026b3351c72a1cbcbb0d079eb241dfdc1888fa8411aab97d57feb3225cd",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 802.1712768876916,
+        "sigma": 102.68016752359155
+      },
+      "role": "primary",
+      "style": "wide periodic cover-changing sweeper"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 1100.4894886202214,
+        "bayesian_sigma": 102.34137399866445,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 54.0,
+        "damage_for_mean": 83.0909090909091,
+        "draws": 20,
+        "duration_seconds_mean": 8.210590841931818,
+        "empirical_score": 0.6431818181818182,
+        "env_applied_action_saturation_mean": 0.030540659196734404,
+        "global_physical_side_delta": 0.20454545454545459,
+        "losses": 147,
+        "matches": 440,
+        "max_pair_score": 0.95,
+        "max_pair_side_score_delta": 0.75,
+        "min_pair_score": 0.25,
+        "mu_action_saturation_mean": 0.003678125762300796,
+        "physical_a_score": 0.5409090909090909,
+        "physical_b_score": 0.7454545454545455,
+        "sampled_action_saturation_mean": 0.003267171084918328,
+        "timeout_rate": 0.045454545454545456,
+        "wins": 273
+      },
+      "candidate_class": "learned_or_hybrid",
+      "canonical_id": "bank_phase4_obstacle_search",
+      "checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/phase4_4g2_10x_expansion/training/wave_01/w01_search_obstacle_pursuer_repaired_expansion/checkpoints/snapshot_s006_u0060.pt",
+      "checkpoint_sha256": "f510d6a43714c53d0a1f0e4bafe512846e9f127428d1b038953263957c417eb9",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/phase4_4g2_10x_expansion/training/wave_01/w01_search_obstacle_pursuer_repaired_expansion/checkpoints/snapshot_s006_u0060.pt",
+      "combat_sha256": "f510d6a43714c53d0a1f0e4bafe512846e9f127428d1b038953263957c417eb9",
+      "diagnostic_purpose": "tests search, obstacle recovery, and conversion",
+      "difficulty_parameters": {
+        "action_mode": "deterministic",
+        "sampling_temperature": 0.0,
+        "training_updates": 0
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "phase4_fair_search_combat",
+      "model_or_controller_sha256": "f510d6a43714c53d0a1f0e4bafe512846e9f127428d1b038953263957c417eb9",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 1100.4894886202214,
+        "sigma": 102.34137399866445
+      },
+      "role": "reserve",
+      "style": "obstacle-search pursuer with strongest screened hunt"
+    },
+    {
+      "action_schema": "phase3v2_eight_action_v001",
+      "calibration_metrics": {
+        "bayesian_mu": 964.2043125808627,
+        "bayesian_sigma": 102.26847147781015,
+        "contact_rate": 0.9772727272727273,
+        "damage_against_mean": 73.13636363636364,
+        "damage_for_mean": 62.40909090909091,
+        "draws": 20,
+        "duration_seconds_mean": 7.459136297295454,
+        "empirical_score": 0.44545454545454544,
+        "env_applied_action_saturation_mean": 0.02404013608160726,
+        "global_physical_side_delta": 0.1272727272727272,
+        "losses": 234,
+        "matches": 440,
+        "max_pair_score": 0.7125,
+        "max_pair_side_score_delta": 0.39999999999999997,
+        "min_pair_score": 0.2375,
+        "mu_action_saturation_mean": 0.02420432888398604,
+        "physical_a_score": 0.38181818181818183,
+        "physical_b_score": 0.509090909090909,
+        "sampled_action_saturation_mean": 0.02404013608160726,
+        "timeout_rate": 0.045454545454545456,
+        "wins": 186
+      },
+      "candidate_class": "parametric_anchor",
+      "canonical_id": "bank_anchor_rusher",
+      "checkpoint": "experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+      "checkpoint_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+      "combat_checkpoint": "experiments/phase4_active_diagnostic/phase4_4_gvg_stimulus_library/training/generalist_safe_from_s050/checkpoints/snapshot_s030_u0030.pt",
+      "combat_sha256": "4ce907c625f228546e6f65df3a55021a8afc7b86f366927eb00e06e61f517c4d",
+      "diagnostic_purpose": "pressure and close-range conversion anchor",
+      "difficulty_parameters": {
+        "forward": 0.75,
+        "max_look": 0.8,
+        "shoot_threshold_deg": 22.0,
+        "strafe": 0.15,
+        "switch_period_decisions": 80
+      },
+      "fairness": {
+        "final_heldout_used": false,
+        "hidden_target_coordinates": false,
+        "map_identity": false,
+        "navmesh_oracle": false,
+        "opponent_identity": false
+      },
+      "family": "fair_parametric_anchor",
+      "model_or_controller_sha256": "622d333e1e6920a04b735b269b1473f87f017519c70cebb67e8cb886ca514d6b",
+      "normalizers": {
+        "actor231": {
+          "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+          "runtime_relevance": "navigator/fair-search schema freeze; not a mutable input",
+          "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+          "update": false
+        },
+        "local45": {
+          "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+          "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e",
+          "update": false
+        }
+      },
+      "observation_schema": {
+        "actor": "phase5_actor_obs_v001",
+        "actor_dim": 231,
+        "critic_suffix_available_to_actor": false,
+        "visible_combat": "phase3v2_c_local45",
+        "visible_combat_dim": 45
+      },
+      "rating": {
+        "mu": 964.2043125808627,
+        "sigma": 102.26847147781015
+      },
+      "role": "reserve",
+      "style": "forward-aggressive close-range rusher"
+    }
+  ],
+  "calibration": {
+    "candidate_count": 12,
+    "device": "cuda:0",
+    "final_heldout_used": false,
+    "layout_family": "rooms_doorways",
+    "layout_seeds": [
+      550002,
+      550007,
+      550012,
+      550017
+    ],
+    "layout_split": "validation",
+    "mean_bayesian_mu": 1000.0,
+    "paired_seeds_per_unordered_pair": 20,
+    "primary_count": 8,
+    "reserve_count": 2,
+    "side_swapped": true,
+    "terminal_and_damage_complete": true,
+    "terminal_matches": 2640,
+    "unordered_pair_count": 66
+  },
+  "primary_ids": [
+    "bank_original_combat_expert",
+    "bank_anchor_face_shooter",
+    "bank_phase5_peeker",
+    "bank_phase4_generalist",
+    "bank_anchor_kiter",
+    "bank_phase4_anti_strafe",
+    "bank_anchor_strafe_shooter",
+    "bank_anchor_cover_sweeper"
+  ],
+  "reserve_ids": [
+    "bank_phase4_obstacle_search",
+    "bank_anchor_rusher"
+  ],
+  "schema_version": "final_cuda_bot_bank_v001",
+  "status": "TANDEMFPS_CUDA_EXAMINER_BANK_CALIBRATED",
+  "training_performed": false
+}

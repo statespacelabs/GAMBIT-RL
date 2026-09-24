@@ -1,0 +1,61 @@
+{
+  "schema_version": "phase5_map_general_hunter_curriculum_v001",
+  "status": "FROZEN",
+  "prerequisite": "PHASE5_DAGGER_NAVIGATOR_READY",
+  "actor_schema": "phase5_actor_obs_v001",
+  "critic_schema": "phase5_privileged_critic_obs_v001",
+  "combat_expert_frozen": true,
+  "heldout_training_samples": 0,
+  "milestones_are_fixed_area_environment_steps": true,
+  "stages": [
+    {
+      "stage": "H0",
+      "description": "visible stationary target, open layouts",
+      "preset": "ppo_h0",
+      "milestone_steps": 1024,
+      "seeds": [540000, 540005, 540015, 540045, 540050, 540055, 540060, 540065]
+    },
+    {
+      "stage": "H1",
+      "description": "hidden stationary target, simple obstacles",
+      "preset": "ppo_h1",
+      "milestone_steps": 2048,
+      "seeds": [540006, 540007, 540011, 540016, 540017, 540021, 540022, 540027]
+    },
+    {
+      "stage": "H2",
+      "description": "hidden stationary target, all training families",
+      "preset": "ppo_h2",
+      "milestone_steps": 4096,
+      "seeds": [540003, 540006, 540007, 540010, 540011, 540013, 540014, 540016, 540017, 540018, 540019, 540020, 540021, 540022, 540025, 540027]
+    },
+    {
+      "stage": "H3",
+      "description": "armed hold-angle target",
+      "preset": "ppo_h3",
+      "milestone_steps": 6144,
+      "seeds": [540000, 540001, 540002, 540003, 540004, 540005, 540006, 540007]
+    },
+    {
+      "stage": "H4",
+      "description": "moving target that breaks LOS",
+      "preset": "ppo_h4",
+      "milestone_steps": 8192,
+      "seeds": [540029, 540030, 540033, 540034, 540035, 540038, 540040, 540041, 540046, 540047, 540048, 540053, 540061, 540066, 540067, 540068]
+    },
+    {
+      "stage": "H5",
+      "description": "mixed scripted and frozen neural opponents",
+      "preset": "ppo_h5_scripted",
+      "milestone_steps": 12288,
+      "seeds": [540003, 540010, 540013, 540014, 540018, 540019, 540020, 540025, 540027, 540029, 540030, 540070, 540071, 540076, 540081, 540083],
+      "scripted_fraction": 0.5,
+      "frozen_neural_fraction": 0.5
+    }
+  ],
+  "successive_halving": [
+    {"after_stage": "H1", "retain_configurations": 4, "reuse_top": 2},
+    {"after_stage": "H3", "retain_configurations": 2, "reuse_top": 2}
+  ],
+  "selection_validation_seeds": [550001, 550002, 550003, 550004, 550005, 550009, 550010, 550012]
+}

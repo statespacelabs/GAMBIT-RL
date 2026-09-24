@@ -1,0 +1,66 @@
+{
+  "calibration_device": "cuda:0",
+  "composition_target": {
+    "primary_learned_or_hybrid": 4,
+    "primary_parametric_anchors": 4,
+    "reserve_learned_or_hybrid": 1,
+    "reserve_parametric_anchors": 1
+  },
+  "fairness": {
+    "absolute_world_coordinates": false,
+    "actor_schema": "phase5_actor_obs_v001",
+    "hidden_target_coordinates": false,
+    "human_controller": false,
+    "map_identity": false,
+    "navmesh_oracle": false,
+    "opponent_identity": false
+  },
+  "frozen_hashes": {
+    "actor231_normalizer": {
+      "path": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+      "sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940"
+    },
+    "local45_normalizer": {
+      "path": "experiments/phase3v2/normalizers/phase3v2_c_local45_no_pressure.pt",
+      "sha256": "28df2464221f65798ff4e4c98eb0d8d340f18b8765b4ca306fcbc45da4e89b5e"
+    },
+    "match_adapter": {
+      "path": "scripts/phase6_examiner_bank_match.py",
+      "sha256": "49750c7921c7c96c72b749c0dbc97399b04c011d5522122c0f449064f7277ab5"
+    },
+    "tournament_build": {
+      "path": "experiments/phase6_population_league_psro/03_tournament/derived_unity/BotArenaPhase6Tournament/Builds/BotArena.x86_64",
+      "sha256": "0bfe51325720c950b4ad75ce7c3b65595fd7e939908520ec33600919919327a8"
+    },
+    "tournament_source": {
+      "path": "experiments/phase6_population_league_psro/03_tournament/phase6_symmetric_tournament.py",
+      "sha256": "6ee4ac440d286dbc398eb7495ca8a24ab5cb7758f9236dc9622fb44864139d56"
+    },
+    "validation_manifest": {
+      "internal_manifest_sha256": "fc3c432a17b80290ef04b6df30acc07bbd5ed065ea487dc5995c7e7b4916b777",
+      "path": "experiments/phase5_map_general_headless_hunter/02_layouts/VALIDATION_LAYOUTS.json",
+      "sha256": "20593f1a6928c1fbff209205f9b8bde736bdd9fa0b98a54f6b8cf757875dae4f"
+    }
+  },
+  "prerequisite": "TANDEMFPS_CUDA_BOT_BANK_SCREENED",
+  "primary_target": {
+    "maximum": 8,
+    "minimum": 6,
+    "selected": 8
+  },
+  "reserve_target": 2,
+  "round_robin": {
+    "final_heldout_used": false,
+    "map_source": "current Phase 5 procedural tournament build",
+    "paired_seeds_per_pair": 20,
+    "side_swapped": true,
+    "terminal_and_damage_complete_required": true,
+    "total_matches": 2640,
+    "unordered_pairs": 66,
+    "validation_layout_family": "rooms_doorways"
+  },
+  "schema_version": "phase6_cuda_examiner_calibration_contract_v001",
+  "selection_rule": "terminal-only Bayesian/Bradley-Terry calibration followed by within-class payoff-profile diversity and reliability selection",
+  "status": "FROZEN_PRE_EXECUTION",
+  "training_performed": false
+}

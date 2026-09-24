@@ -1,0 +1,37 @@
+seed: 42
+
+manifest_path: "data/manifest.csv"
+image_size: [160, 240]
+seq_len: 150
+
+epochs: 1
+batches_per_epoch: 2
+
+# Effective global batch size = world_size * players_per_rank * clips_per_player
+# In torchrun, world_size is automatically determined by DDP
+players_per_rank: 8
+clips_per_player: 4
+
+num_workers: 0
+amp: true
+lr: 0.0001
+weight_decay: 0.05
+grad_clip_norm: 1.0
+
+# DDP Gather Configuration
+gather_z: true
+gather_z_raw: false
+gather_p: false
+
+# Variance-Covariance Mode
+vc_on_global_p: false
+vc_on_global_z_raw: false
+
+# Contrastive Loss Mode
+# Options: "global_infonce_local_vc"
+# "local_anchors_global_candidates" is planned but not implemented yet.
+contrastive_loss_mode: "global_infonce_local_vc"
+
+log_every: 20
+save_every_epochs: 1
+output_dir: "checkpoints"

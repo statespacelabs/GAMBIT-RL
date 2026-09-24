@@ -1,0 +1,45 @@
+# RL-GRADER Phase 2 — Advanced Behavior Cloning Training Config
+# Target: gpu-30 (MI325X)
+
+# --- Dataset Paths ---
+transition_manifest_path: "artifacts/demonstrations/transitions/manifests/phase2_transition_manifest.csv"
+action_scaler_path: "artifacts/demonstrations/transitions/scalers/action_scaler.npz"
+state_scaler_path: ""
+reward_stats_path: "artifacts/demonstrations/transitions/rewards/reward_stats.json"
+
+# --- Model Dimensions ---
+state_dim: 512
+action_dim: 14
+hidden_dim: 2048
+num_hidden_layers: 4
+dropout: 0.1
+
+# --- Action Dims Schema ---
+continuous_indices: [0, 1, 2, 3, 4, 5, 6]
+binary_indices: [8, 9, 10, 11]
+count_indices: [7, 12, 13]
+
+# --- Normalization ---
+normalize_state: false
+normalize_action: true
+normalize_reward: false
+
+# --- Optimizer & Training Duration ---
+batch_size: 512
+lr: 0.0003
+weight_decay: 0.0001
+grad_clip_norm: 1.0
+binary_loss_weight: 1.0
+
+epochs: 100
+steps_per_epoch: 2000
+val_every_epochs: 1
+patience: 15
+
+# --- Logging & Checkpoints ---
+checkpoint_dir: "experiments/phase2/bc_advanced/checkpoints"
+log_dir: "experiments/phase2/bc_advanced/logs"
+
+num_workers: 8
+device: "cuda"
+seed: 42

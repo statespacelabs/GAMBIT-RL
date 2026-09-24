@@ -1,0 +1,297 @@
+{
+  "learned_or_hybrid": {
+    "eligible": [
+      "bank_original_combat_expert",
+      "bank_phase4_anti_strafe",
+      "bank_phase4_generalist",
+      "bank_phase4_obstacle_search",
+      "bank_phase5_hunter",
+      "bank_phase5_peeker"
+    ],
+    "excluded": [
+      "bank_phase5_hunter"
+    ],
+    "five_candidate_combinations": [
+      {
+        "bots": [
+          "bank_original_combat_expert",
+          "bank_phase4_anti_strafe",
+          "bank_phase4_generalist",
+          "bank_phase4_obstacle_search",
+          "bank_phase5_peeker"
+        ],
+        "utility": 0.8505222840292359
+      },
+      {
+        "bots": [
+          "bank_original_combat_expert",
+          "bank_phase4_anti_strafe",
+          "bank_phase4_generalist",
+          "bank_phase5_hunter",
+          "bank_phase5_peeker"
+        ],
+        "utility": 0.8481869861670926
+      },
+      {
+        "bots": [
+          "bank_original_combat_expert",
+          "bank_phase4_anti_strafe",
+          "bank_phase4_obstacle_search",
+          "bank_phase5_hunter",
+          "bank_phase5_peeker"
+        ],
+        "utility": 0.8237704669687539
+      },
+      {
+        "bots": [
+          "bank_original_combat_expert",
+          "bank_phase4_anti_strafe",
+          "bank_phase4_generalist",
+          "bank_phase4_obstacle_search",
+          "bank_phase5_hunter"
+        ],
+        "utility": 0.7897349244050924
+      },
+      {
+        "bots": [
+          "bank_original_combat_expert",
+          "bank_phase4_generalist",
+          "bank_phase4_obstacle_search",
+          "bank_phase5_hunter",
+          "bank_phase5_peeker"
+        ],
+        "utility": 0.6699325667306395
+      },
+      {
+        "bots": [
+          "bank_phase4_anti_strafe",
+          "bank_phase4_generalist",
+          "bank_phase4_obstacle_search",
+          "bank_phase5_hunter",
+          "bank_phase5_peeker"
+        ],
+        "utility": 0.6124305392363587
+      }
+    ],
+    "hard_flags": {
+      "bank_original_combat_expert": [],
+      "bank_phase4_anti_strafe": [],
+      "bank_phase4_generalist": [],
+      "bank_phase4_obstacle_search": [],
+      "bank_phase5_hunter": [],
+      "bank_phase5_peeker": []
+    },
+    "nearest_profile": {
+      "bank_original_combat_expert": {
+        "bot_id": "bank_phase4_obstacle_search",
+        "profile_correlation": 0.6560996263139189,
+        "profile_rmse": 0.1328768226591831,
+        "redundant": false
+      },
+      "bank_phase4_anti_strafe": {
+        "bot_id": "bank_phase4_generalist",
+        "profile_correlation": 0.8969438127659214,
+        "profile_rmse": 0.11194306588619055,
+        "redundant": false
+      },
+      "bank_phase4_generalist": {
+        "bot_id": "bank_phase4_anti_strafe",
+        "profile_correlation": 0.8969438127659213,
+        "profile_rmse": 0.11194306588619055,
+        "redundant": false
+      },
+      "bank_phase4_obstacle_search": {
+        "bot_id": "bank_original_combat_expert",
+        "profile_correlation": 0.656099626313919,
+        "profile_rmse": 0.1328768226591831,
+        "redundant": false
+      },
+      "bank_phase5_hunter": {
+        "bot_id": "bank_phase5_peeker",
+        "profile_correlation": 0.6793995519212819,
+        "profile_rmse": 0.14784916300067444,
+        "redundant": false
+      },
+      "bank_phase5_peeker": {
+        "bot_id": "bank_phase5_hunter",
+        "profile_correlation": 0.6793995519212819,
+        "profile_rmse": 0.14784916300067444,
+        "redundant": false
+      }
+    },
+    "primary": [
+      "bank_original_combat_expert",
+      "bank_phase4_anti_strafe",
+      "bank_phase4_generalist",
+      "bank_phase5_peeker"
+    ],
+    "reserve": [
+      "bank_phase4_obstacle_search"
+    ],
+    "selected": [
+      "bank_original_combat_expert",
+      "bank_phase4_anti_strafe",
+      "bank_phase4_generalist",
+      "bank_phase4_obstacle_search",
+      "bank_phase5_peeker"
+    ]
+  },
+  "method": "hard reliability/triviality filters followed by exhaustive within-class payoff-profile diversity selection",
+  "not_selected": [
+    "bank_anchor_search_pursuer",
+    "bank_phase5_hunter"
+  ],
+  "parametric_anchor": {
+    "eligible": [
+      "bank_anchor_cover_sweeper",
+      "bank_anchor_face_shooter",
+      "bank_anchor_kiter",
+      "bank_anchor_rusher",
+      "bank_anchor_search_pursuer",
+      "bank_anchor_strafe_shooter"
+    ],
+    "excluded": [
+      "bank_anchor_search_pursuer"
+    ],
+    "five_candidate_combinations": [
+      {
+        "bots": [
+          "bank_anchor_cover_sweeper",
+          "bank_anchor_face_shooter",
+          "bank_anchor_kiter",
+          "bank_anchor_rusher",
+          "bank_anchor_strafe_shooter"
+        ],
+        "utility": 1.6481018379761336
+      },
+      {
+        "bots": [
+          "bank_anchor_cover_sweeper",
+          "bank_anchor_face_shooter",
+          "bank_anchor_kiter",
+          "bank_anchor_search_pursuer",
+          "bank_anchor_strafe_shooter"
+        ],
+        "utility": 1.6189854096195286
+      },
+      {
+        "bots": [
+          "bank_anchor_cover_sweeper",
+          "bank_anchor_face_shooter",
+          "bank_anchor_rusher",
+          "bank_anchor_search_pursuer",
+          "bank_anchor_strafe_shooter"
+        ],
+        "utility": 1.5394656484624591
+      },
+      {
+        "bots": [
+          "bank_anchor_cover_sweeper",
+          "bank_anchor_face_shooter",
+          "bank_anchor_kiter",
+          "bank_anchor_rusher",
+          "bank_anchor_search_pursuer"
+        ],
+        "utility": 1.4265936931002758
+      },
+      {
+        "bots": [
+          "bank_anchor_cover_sweeper",
+          "bank_anchor_kiter",
+          "bank_anchor_rusher",
+          "bank_anchor_search_pursuer",
+          "bank_anchor_strafe_shooter"
+        ],
+        "utility": 1.2904340677317474
+      },
+      {
+        "bots": [
+          "bank_anchor_face_shooter",
+          "bank_anchor_kiter",
+          "bank_anchor_rusher",
+          "bank_anchor_search_pursuer",
+          "bank_anchor_strafe_shooter"
+        ],
+        "utility": 1.1333364868160305
+      }
+    ],
+    "hard_flags": {
+      "bank_anchor_cover_sweeper": [],
+      "bank_anchor_face_shooter": [],
+      "bank_anchor_kiter": [],
+      "bank_anchor_rusher": [],
+      "bank_anchor_search_pursuer": [],
+      "bank_anchor_strafe_shooter": []
+    },
+    "nearest_profile": {
+      "bank_anchor_cover_sweeper": {
+        "bot_id": "bank_anchor_strafe_shooter",
+        "profile_correlation": 0.7381931348944543,
+        "profile_rmse": 0.10918733900961229,
+        "redundant": false
+      },
+      "bank_anchor_face_shooter": {
+        "bot_id": "bank_anchor_kiter",
+        "profile_correlation": 0.2641444947040326,
+        "profile_rmse": 0.1210630001280325,
+        "redundant": false
+      },
+      "bank_anchor_kiter": {
+        "bot_id": "bank_anchor_face_shooter",
+        "profile_correlation": 0.2641444947040326,
+        "profile_rmse": 0.1210630001280325,
+        "redundant": false
+      },
+      "bank_anchor_rusher": {
+        "bot_id": "bank_anchor_search_pursuer",
+        "profile_correlation": 0.7823293419819665,
+        "profile_rmse": 0.08605957239029254,
+        "redundant": false
+      },
+      "bank_anchor_search_pursuer": {
+        "bot_id": "bank_anchor_rusher",
+        "profile_correlation": 0.7823293419819665,
+        "profile_rmse": 0.08605957239029254,
+        "redundant": false
+      },
+      "bank_anchor_strafe_shooter": {
+        "bot_id": "bank_anchor_cover_sweeper",
+        "profile_correlation": 0.7381931348944542,
+        "profile_rmse": 0.10918733900961229,
+        "redundant": false
+      }
+    },
+    "primary": [
+      "bank_anchor_cover_sweeper",
+      "bank_anchor_face_shooter",
+      "bank_anchor_kiter",
+      "bank_anchor_strafe_shooter"
+    ],
+    "reserve": [
+      "bank_anchor_rusher"
+    ],
+    "selected": [
+      "bank_anchor_cover_sweeper",
+      "bank_anchor_face_shooter",
+      "bank_anchor_kiter",
+      "bank_anchor_rusher",
+      "bank_anchor_strafe_shooter"
+    ]
+  },
+  "primary": [
+    "bank_original_combat_expert",
+    "bank_anchor_face_shooter",
+    "bank_phase5_peeker",
+    "bank_phase4_generalist",
+    "bank_anchor_kiter",
+    "bank_phase4_anti_strafe",
+    "bank_anchor_strafe_shooter",
+    "bank_anchor_cover_sweeper"
+  ],
+  "reserve": [
+    "bank_phase4_obstacle_search",
+    "bank_anchor_rusher"
+  ],
+  "schema_version": "phase6_cuda_examiner_selection_audit_v001",
+  "status": "PASS"
+}

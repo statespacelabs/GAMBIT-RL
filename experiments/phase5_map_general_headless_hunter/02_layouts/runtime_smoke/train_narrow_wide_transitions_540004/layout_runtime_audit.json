@@ -1,0 +1,31 @@
+{
+    "schema_version": "phase5_procedural_layout_runtime_audit_v001",
+    "status": "PASS",
+    "manifest_path": "/home/amd/RL-GRADER/experiments/phase5_map_general_headless_hunter/02_layouts/TRAIN_LAYOUTS.json",
+    "manifest_sha256": "8def6e878b715ca67482609221d7225d9892714a4e8c40a9a39e6883f9c38419",
+    "split": "train",
+    "area_count": 1,
+    "actor_connectivity_access": false,
+    "areas": [
+        {
+            "area_id": 0,
+            "seed": 540004,
+            "family": "narrow_wide_transitions",
+            "status": "PASS",
+            "floor_below_a": true,
+            "floor_below_b": true,
+            "spawn_a_obstacle_clear": true,
+            "spawn_b_obstacle_clear": true,
+            "players_not_overlapping": true,
+            "requested_initial_los": true,
+            "actual_initial_los": true,
+            "requested_los_satisfied": true,
+            "collider_count_matches": true,
+            "collider_count": 13,
+            "frozen_connectivity_proof_passed": true,
+            "movement_speed_scale": 1.0297609567642213,
+            "target_motion": "alternating_cover"
+        }
+    ],
+    "failure_reason": ""
+}

@@ -1,0 +1,7 @@
+mlagents-envs==1.1.0
+numpy==1.23.5
+onnxruntime==1.23.2
+pandas==2.3.3
+PyYAML==6.0.3
+protobuf==3.20.3
+grpcio==1.48.2

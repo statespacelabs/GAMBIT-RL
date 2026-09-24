@@ -1,0 +1,46 @@
+# Phase 3A invariant/rollout configuration. PPO must remain disabled.
+env_path: "artifacts/unity/combat"
+enable_ppo: false
+rollout_smoke_steps: 100
+freeze_pretrained_branches: true
+max_preupdate_clip_frac: 0.001
+
+num_iterations: 0
+rollout_steps: 4096
+seq_len: 32
+ppo_epochs: 4
+batch_size: 16
+ppo_clip: 0.1
+gamma: 0.99
+gae_lambda: 0.95
+lr: 0.00015
+max_grad_norm: 0.5
+
+entropy_coef: 0.003
+value_coef: 0.5
+kl_anchor_coef: 0.05
+smooth_coef: 0.02
+
+# Gate H: Unity env_reward is the combat signal. Observation stays 45-D.
+damage_dealt_obs_index: null
+damage_taken_obs_index: null
+require_damage_signals: false
+env_reward_coef: 1.0
+damage_dealt_coef: 0.0
+damage_taken_coef: 0.0
+kill_coef: 0.5
+death_coef: 0.5
+miss_coef: 0.0
+jerk_coef: 0.001
+spam_coef: 0.001
+
+eval_interval: 50
+promote_win_rate: 0.55
+registry_dir: "experiments/phase3/registry"
+log_dir: "experiments/phase3/distill_production/logs"
+device: "cuda"
+telemetry_stats_path: "artifacts/demonstrations/packed/telemetry_stats.npz"
+
+# Phase 3F: observation clipping and episode boundaries
+obs_clip_value: 10.0
+force_done_every_n: 2048

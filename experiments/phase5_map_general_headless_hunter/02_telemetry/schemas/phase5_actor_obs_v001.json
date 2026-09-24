@@ -1,0 +1,248 @@
+{
+  "composite_actor_input_dim": 363,
+  "content_sha256": "2cb24f1977d18862264c52017e1e4d3ee9461b9c866dd39f53dfa3e6886708ee",
+  "coordinate_frame": "actor yaw-relative; no map frame fields",
+  "environment_observation_dim": 231,
+  "fixed_step_hz": 50,
+  "forbidden_actor_inputs": [
+    "map_name",
+    "map_id",
+    "absolute_world_position",
+    "absolute_world_yaw",
+    "current_hidden_enemy_position",
+    "current_hidden_enemy_relative_vector",
+    "true_hidden_enemy_distance",
+    "NavMesh_path",
+    "teacher_action",
+    "critic_privileged_state",
+    "RGB",
+    "video"
+  ],
+  "groups": [
+    {
+      "definition": "Actor-yaw-relative xyz velocity, divided by 12 m/s and clipped.",
+      "dim": 3,
+      "name": "self_velocity_local",
+      "offset": 0,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Pitch/yaw/roll finite-difference angular velocity, divided by 720 deg/s and clipped.",
+      "dim": 3,
+      "name": "self_angular_velocity_local",
+      "offset": 3,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Grounded bit and crouched bit.",
+      "dim": 2,
+      "name": "grounded_crouched",
+      "offset": 6,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Self health, magazine, reserve and cooldown fractions.",
+      "dim": 4,
+      "name": "health_ammo_cooldown",
+      "offset": 8,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Valid bit, noisy actor-relative damage-bearing sin/cos, clipped cue age.",
+      "dim": 4,
+      "name": "recent_damage_cue",
+      "offset": 12,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Previous phase5_action8_v1 after environment clipping and binarization.",
+      "dim": 8,
+      "name": "previous_action",
+      "offset": 16,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Normalized speed/progress, short/long stuck fractions, collision rate and time since progress.",
+      "dim": 6,
+      "name": "progress_stuck_history",
+      "offset": 24,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "32 yaw-relative 360-degree torso rays as normalized distance/hit-bit pairs; character layers are ignored.",
+      "dim": 64,
+      "name": "torso_obstacle_rays",
+      "offset": 30,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "16 foot-height and 16 head-height yaw-relative rays as normalized distance/hit-bit pairs; character layers are ignored.",
+      "dim": 64,
+      "name": "foot_head_obstacle_rays",
+      "offset": 94,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "8 radial probes as normalized floor distance, floor-valid bit and step-obstacle bit triples.",
+      "dim": 24,
+      "name": "floor_drop_step_rays",
+      "offset": 158,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Most recent controller collision normal transformed to actor-yaw-local space.",
+      "dim": 3,
+      "name": "collision_normal_local",
+      "offset": 182,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Minimum normalized torso clearance in eight actor-relative sectors.",
+      "dim": 8,
+      "name": "local_free_space_summary",
+      "offset": 185,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Visible bit, bearing/elevation sin/cos, normalized log distance and actor-local relative velocity xyz. Payload is zero unless LOS is true.",
+      "dim": 9,
+      "name": "visible_enemy_state",
+      "offset": 193,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Valid bit, stale last-seen point transformed to current actor-local xyz and clipped age. The stored point updates only while LOS is true.",
+      "dim": 5,
+      "name": "last_seen_memory",
+      "offset": 202,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Valid bit, event-time noisy bearing sin/cos and clipped age. It never follows a hidden target.",
+      "dim": 4,
+      "name": "last_heard_memory",
+      "offset": 207,
+      "range": [
+        -1,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "Eight-way noisy bearing one-hot, five-way logarithmic distance one-hot, valid bit, clipped age and last-update dropout bit; at most 2 Hz with dropout.",
+      "dim": 16,
+      "name": "coarse_hunt_cue",
+      "offset": 211,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    },
+    {
+      "definition": "One-hot patrol, investigate, combat or recovery mode derived only from allowed actor fields.",
+      "dim": 4,
+      "name": "tactical_mode",
+      "offset": 227,
+      "range": [
+        0,
+        1
+      ],
+      "source": "environment"
+    }
+  ],
+  "hunt_cue_contract": {
+    "bearing_jitter_sectors": [
+      -1,
+      0,
+      1
+    ],
+    "bearing_sectors": 8,
+    "default_dropout_probability": 0.15,
+    "distance_bins": 5,
+    "distance_edges_m": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "distance_jitter_bins": [
+      -1,
+      0,
+      1
+    ],
+    "forbidden": [
+      "exact hidden enemy world position",
+      "exact current hidden relative vector",
+      "map name",
+      "map ID",
+      "absolute actor coordinates"
+    ],
+    "maximum_update_hz": 2.0
+  },
+  "kind": "actor_environment_observation",
+  "local45_compatibility": "This is an opt-in parallel sensor. phase3v2_c_local45 and its fitted normalizer are unchanged.",
+  "schema_id": "phase5_actor_obs_v001",
+  "tactical_state_schema": "phase5_tactical_state_v001",
+  "version": 1,
+  "visibility_contract": {
+    "los_false": "visible_enemy_state payload indices are exactly zero; last-seen/heard memories are stale event-time data only",
+    "los_true": "visible_enemy_state may contain exact current relative state"
+  }
+}

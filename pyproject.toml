@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gambit-paper"
+version = "0.1.0"
+description = "Reused training, examiner calibration, and skill assessment code for the GAMBIT manuscript"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23.5,<3"]
+
+[project.optional-dependencies]
+training = [
+  "torch>=2.0",
+  "torchvision>=0.15",
+  "pandas>=1.5",
+  "PyYAML>=6",
+  "opencv-python-headless>=4.5",
+]
+unity = ["mlagents-envs==1.1.0", "protobuf==3.20.3"]
+test = ["pytest>=7"]
+
+[project.scripts]
+gambit-calibrate = "scripts.calibrate_examiner_bank:main"
+gambit-select-examiners = "scripts.select_examiner_bank:main"
+gambit-train-navigation-bc = "scripts.train_navigation_bc:main"
+gambit-train-navigation-ppo = "scripts.train_navigation_ppo:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gambit*", "scripts*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+

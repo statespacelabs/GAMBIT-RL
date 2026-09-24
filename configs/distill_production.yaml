@@ -1,0 +1,32 @@
+# Phase 3A production distillation. This config never enables PPO.
+transition_manifest_path: "artifacts/demonstrations/commands/phase2_transition_manifest_command_labels_split.csv"
+window_manifest_path: "artifacts/demonstrations/commands/window_manifest_with_tel_split.csv"
+action_scaler_path: ""
+phase1_ckpt: "checkpoints_v2_large/best_checkpoint.pt"
+
+require_normalized_telemetry: true
+telemetry_fps: 30.0
+action_step_seconds: 1.0
+max_move_speed: 6.0
+max_yaw_delta: 180.0
+max_pitch_delta: 180.0
+
+obs_dim: 45
+action_dim: 8
+hidden_dim: 256
+num_layers: 3
+
+batch_size: 256
+lr: 0.0003
+weight_decay: 0.0001
+epochs: 30
+warmup_epochs: 5
+recurrent_epochs: 15
+grad_clip_norm: 1.0
+binary_pos_weight: [3.0, 8.0, 8.0, 8.0]
+
+force_retrain: false
+checkpoint_dir: "experiments/phase3/distill_production/checkpoints"
+log_dir: "experiments/phase3/distill_production/logs"
+num_workers: 8
+device: "cuda"

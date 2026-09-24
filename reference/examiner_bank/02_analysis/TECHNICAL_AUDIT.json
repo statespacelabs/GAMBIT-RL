@@ -1,0 +1,13 @@
+{
+  "audited_matches": 2640,
+  "candidate_count": 12,
+  "damage_complete": true,
+  "dense_reward_used_for_payoff": false,
+  "expected_matches": 2640,
+  "failures": [],
+  "final_heldout_used": false,
+  "layout_family": "rooms_doorways",
+  "schema_version": "phase6_cuda_examiner_technical_audit_v001",
+  "status": "PASS",
+  "terminal_payoff_source": "unity_terminal_event_only"
+}

@@ -1,0 +1,14 @@
+include README.md ported.md port_manifest.json .gitignore
+include requirements*.txt
+recursive-include docs *.md *.json
+recursive-include configs *.yaml
+recursive-include reference *.md *.json *.csv *.sha256 *.gz
+recursive-include experiments *.json
+recursive-include tests *.py
+recursive-include scripts *.sh *.md
+recursive-include 06_map_general_hunter *.json
+global-exclude __pycache__ *.py[cod]
+prune runs
+prune build
+prune dist
+

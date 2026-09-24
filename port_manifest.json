@@ -1,0 +1,1395 @@
+[
+  {
+    "source": "06_map_general_hunter/CURRICULUM.json",
+    "destination": "06_map_general_hunter/CURRICULUM.json",
+    "source_sha256": "6b3e667c77b8fc3eebfd3ca399d1065a3b0d296e854d92200dd1d6d72f9ed05b",
+    "ported_sha256": "6b3e667c77b8fc3eebfd3ca399d1065a3b0d296e854d92200dd1d6d72f9ed05b",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "configs/bc_train.yaml",
+    "destination": "configs/bc_train.yaml",
+    "source_sha256": "7a1c851b3e9b94d03b03f64ca5483c657a1f857d5ecb3f078992fc801c6dc304",
+    "ported_sha256": "e0e4ee81cd5d27759610ebb6eb363c5ae5b48ffb912c9651622334c8890ed404",
+    "changes": "Descriptive configuration filename where applicable and portable relative paths; original hyperparameters retained"
+  },
+  {
+    "source": "configs/bc_train_advanced.yaml",
+    "destination": "configs/bc_train_advanced.yaml",
+    "source_sha256": "51a8e8809fb265e4502b8e0e104d698099c9aa697af899a9deaa048a8e0e4749",
+    "ported_sha256": "8368492ec84b6dd027bbd8086ad8c926949df0cf7a13cda73ebf4e09d8973246",
+    "changes": "Descriptive configuration filename where applicable and portable relative paths; original hyperparameters retained"
+  },
+  {
+    "source": "configs/distill.yaml",
+    "destination": "configs/distill.yaml",
+    "source_sha256": "0238f1a62738f9b759a2097e49cb1f3635a87e191024c87f3fc6195d6e420d8c",
+    "ported_sha256": "0238f1a62738f9b759a2097e49cb1f3635a87e191024c87f3fc6195d6e420d8c",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "configs/distill_production.yaml",
+    "destination": "configs/distill_production.yaml",
+    "source_sha256": "1053b9653a811c21579067b5b6aa18fcd39d7f0b631580f2428e7047d714339e",
+    "ported_sha256": "bfae1ebba355abc8f5291ea77c4f038b798321698847beac6113d71aa6302af2",
+    "changes": "Descriptive configuration filename where applicable and portable relative paths; original hyperparameters retained"
+  },
+  {
+    "source": "configs/ppo_production.yaml",
+    "destination": "configs/ppo_production.yaml",
+    "source_sha256": "42ce32a054d0c945c95d25192b884805dfbe856a2de83be8b84a83cfe0036e64",
+    "ported_sha256": "540bada78b0b551525e59dc10ccd1ff3ceff944fdab7ccde454232a66f73044c",
+    "changes": "Descriptive configuration filename where applicable and portable relative paths; original hyperparameters retained"
+  },
+  {
+    "source": "configs/ppo_train.yaml",
+    "destination": "configs/ppo_train.yaml",
+    "source_sha256": "d47783b649ebbac95fee1f52dff30d6469e372f6b450130d49b283868bfa9db0",
+    "ported_sha256": "d47783b649ebbac95fee1f52dff30d6469e372f6b450130d49b283868bfa9db0",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "configs/gambit_phase1.yaml",
+    "destination": "configs/representation_pretraining.yaml",
+    "source_sha256": "1922333cad88d6047661bd7820b40842efa0b5cb67e6038a88abec2a7a64797b",
+    "ported_sha256": "1922333cad88d6047661bd7820b40842efa0b5cb67e6038a88abec2a7a64797b",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "configs/train_v2_large.yaml",
+    "destination": "configs/representation_pretraining_large.yaml",
+    "source_sha256": "79837b47cbcb18aaf48174b0a5fa45e2a2b6fed9a7b7897b69b803f3173951d3",
+    "ported_sha256": "1c94153f2df084cd350138aa1c2438158b08f0c72939f39655904c40cd59c764",
+    "changes": "Descriptive configuration filename where applicable and portable relative paths; original hyperparameters retained"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/HELDOUT_LAYOUTS.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/HELDOUT_LAYOUTS.json",
+    "source_sha256": "68cdbc7ce8d40ce57e9b820ece3e2bca5a224f4231796c57a852ed3713eacba3",
+    "ported_sha256": "68cdbc7ce8d40ce57e9b820ece3e2bca5a224f4231796c57a852ed3713eacba3",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/TRAIN_LAYOUTS.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/TRAIN_LAYOUTS.json",
+    "source_sha256": "8def6e878b715ca67482609221d7225d9892714a4e8c40a9a39e6883f9c38419",
+    "ported_sha256": "8def6e878b715ca67482609221d7225d9892714a4e8c40a9a39e6883f9c38419",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/VALIDATION_LAYOUTS.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/VALIDATION_LAYOUTS.json",
+    "source_sha256": "20593f1a6928c1fbff209205f9b8bde736bdd9fa0b98a54f6b8cf757875dae4f",
+    "ported_sha256": "20593f1a6928c1fbff209205f9b8bde736bdd9fa0b98a54f6b8cf757875dae4f",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/LAYOUT_RUNTIME_SMOKE.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/LAYOUT_RUNTIME_SMOKE.json",
+    "source_sha256": "185b77954d40d6df02483098472383c4fb35f00c2b9bb313adc683027a2e3a46",
+    "ported_sha256": "185b77954d40d6df02483098472383c4fb35f00c2b9bb313adc683027a2e3a46",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/heldout_u_traps_dead_ends_560000/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/heldout_u_traps_dead_ends_560000/layout_runtime_audit.json",
+    "source_sha256": "e47f220a6e950b31c808507074884ff75837d1bf894b71ea52fc345216468d0e",
+    "ported_sha256": "e47f220a6e950b31c808507074884ff75837d1bf894b71ea52fc345216468d0e",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/heldout_u_traps_dead_ends_560000/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/heldout_u_traps_dead_ends_560000/runtime_summary.json",
+    "source_sha256": "8283107a07f3d8425e5321da4f591adfed1f5bfbfa37eb18f9969cddc7a10316",
+    "ported_sha256": "8283107a07f3d8425e5321da4f591adfed1f5bfbfa37eb18f9969cddc7a10316",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_narrow_wide_transitions_540004/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_narrow_wide_transitions_540004/layout_runtime_audit.json",
+    "source_sha256": "9ffb3f85422e8a9c8150808f53fd822a0a19c83dc246615a134cd64d570e5ae9",
+    "ported_sha256": "9ffb3f85422e8a9c8150808f53fd822a0a19c83dc246615a134cd64d570e5ae9",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_narrow_wide_transitions_540004/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_narrow_wide_transitions_540004/runtime_summary.json",
+    "source_sha256": "384648b1c121369c582cb2bda4373d7b98f97af9467c47816beae56d58325cfb",
+    "ported_sha256": "384648b1c121369c582cb2bda4373d7b98f97af9467c47816beae56d58325cfb",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_open_scattered_cover_540000/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_open_scattered_cover_540000/layout_runtime_audit.json",
+    "source_sha256": "23214af4c3132422150a84d77e556a75dc2ec0f7a9ab72cc7f0418753fb75d27",
+    "ported_sha256": "23214af4c3132422150a84d77e556a75dc2ec0f7a9ab72cc7f0418753fb75d27",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_open_scattered_cover_540000/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_open_scattered_cover_540000/runtime_summary.json",
+    "source_sha256": "45033c52b9c11a106169eadc6898468cdce922504e1538511e236886685e7501",
+    "ported_sha256": "45033c52b9c11a106169eadc6898468cdce922504e1538511e236886685e7501",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_parallel_corridors_540001/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_parallel_corridors_540001/layout_runtime_audit.json",
+    "source_sha256": "830260f850cebd837569d9ca1ae82ccbff907ce0b38c853d7da27c11aaf1ff13",
+    "ported_sha256": "830260f850cebd837569d9ca1ae82ccbff907ce0b38c853d7da27c11aaf1ff13",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_parallel_corridors_540001/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_parallel_corridors_540001/runtime_summary.json",
+    "source_sha256": "23ec75c9b8ab802a9222fa36afca83508c6f4c479b6e3950e449a8ca9d775c8e",
+    "ported_sha256": "23ec75c9b8ab802a9222fa36afca83508c6f4c479b6e3950e449a8ca9d775c8e",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_pillars_alternating_cover_540003/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_pillars_alternating_cover_540003/layout_runtime_audit.json",
+    "source_sha256": "37a3f8bd44eab8b113105d453ce55b111f5ec66b0ef52daf722b9a85984034b8",
+    "ported_sha256": "37a3f8bd44eab8b113105d453ce55b111f5ec66b0ef52daf722b9a85984034b8",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_pillars_alternating_cover_540003/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_pillars_alternating_cover_540003/runtime_summary.json",
+    "source_sha256": "6e606de7444e8b62d980d316131ba74ba074cb8127d2fd45f09578cccd8bcae4",
+    "ported_sha256": "6e606de7444e8b62d980d316131ba74ba074cb8127d2fd45f09578cccd8bcae4",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_rooms_doorways_540002/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_rooms_doorways_540002/layout_runtime_audit.json",
+    "source_sha256": "1c98f840c1916daf1a3946e2c503f66950534dc4521679c55b809ab6b6f60013",
+    "ported_sha256": "1c98f840c1916daf1a3946e2c503f66950534dc4521679c55b809ab6b6f60013",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_rooms_doorways_540002/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/train_rooms_doorways_540002/runtime_summary.json",
+    "source_sha256": "53716f71df29b3fe9482c9caad44f96805c4cf6d345342efffa13ff9581b4a29",
+    "ported_sha256": "53716f71df29b3fe9482c9caad44f96805c4cf6d345342efffa13ff9581b4a29",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/validation_open_scattered_cover_550000/layout_runtime_audit.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/validation_open_scattered_cover_550000/layout_runtime_audit.json",
+    "source_sha256": "11979e3593931b26caa2c6d757973e2bb086ab1274359abecce6b701704c771c",
+    "ported_sha256": "11979e3593931b26caa2c6d757973e2bb086ab1274359abecce6b701704c771c",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/validation_open_scattered_cover_550000/runtime_summary.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_layouts/runtime_smoke/validation_open_scattered_cover_550000/runtime_summary.json",
+    "source_sha256": "0d0a93334e16d28bcf6a9fc980ce36dc98d5ebabba23ecb94343f90a2030c120",
+    "ported_sha256": "0d0a93334e16d28bcf6a9fc980ce36dc98d5ebabba23ecb94343f90a2030c120",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_telemetry/normalizers/phase5_actor_obs_v001_normalizer_v001.json",
+    "source_sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+    "ported_sha256": "d131048ccc5da298154156966d88117867aa434f360c909de573003c2e74b940",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_telemetry/schemas/phase5_actor_obs_v001.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_telemetry/schemas/phase5_actor_obs_v001.json",
+    "source_sha256": "79c0c7558c2ba88b28f60cc53d40f193426456f0576b648dd574862b49717198",
+    "ported_sha256": "79c0c7558c2ba88b28f60cc53d40f193426456f0576b648dd574862b49717198",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_telemetry/schemas/phase5_privileged_critic_obs_v001.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_telemetry/schemas/phase5_privileged_critic_obs_v001.json",
+    "source_sha256": "717fb267045566d376b972133e1cd0b6fb354d92d57b3c0fcbe940250b8662eb",
+    "ported_sha256": "717fb267045566d376b972133e1cd0b6fb354d92d57b3c0fcbe940250b8662eb",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase5_map_general_headless_hunter/02_telemetry/schemas/phase5_tactical_state_v001.json",
+    "destination": "experiments/phase5_map_general_headless_hunter/02_telemetry/schemas/phase5_tactical_state_v001.json",
+    "source_sha256": "887771f17936239143b4b1975f6bdf11f3bcbf02ee1dd092114e9c56ea0f3295",
+    "ported_sha256": "887771f17936239143b4b1975f6bdf11f3bcbf02ee1dd092114e9c56ea0f3295",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/__init__.py",
+    "destination": "gambit/__init__.py",
+    "source_sha256": "27cf22e61c174552cbaa74243989c0f302592b2a284c72e4bcb0ad01a50ba176",
+    "ported_sha256": "085eade241c2e1199a73953092e6116a120187bca49551184016bd7fa6071ccc",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/phase2/__init__.py",
+    "destination": "gambit/dataset_preparation/__init__.py",
+    "source_sha256": "50e1ca157ce5c444b61c415cd93e3e29b218b0bc8da7aa92607a3d77f70a733d",
+    "ported_sha256": "50e1ca157ce5c444b61c415cd93e3e29b218b0bc8da7aa92607a3d77f70a733d",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/action_extraction.py",
+    "destination": "gambit/dataset_preparation/action_extraction.py",
+    "source_sha256": "fc8330ef47deff4ee43868ca7032ea7d353a8f49a59311d52f7da0ffd3db8c63",
+    "ported_sha256": "fc8330ef47deff4ee43868ca7032ea7d353a8f49a59311d52f7da0ffd3db8c63",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/configs.py",
+    "destination": "gambit/dataset_preparation/configs.py",
+    "source_sha256": "305436848c2246f7a1ea1bd6a49b651992d878d78cca6bff5c9a63bcd5cd76ac",
+    "ported_sha256": "305436848c2246f7a1ea1bd6a49b651992d878d78cca6bff5c9a63bcd5cd76ac",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/latent_cache.py",
+    "destination": "gambit/dataset_preparation/latent_cache.py",
+    "source_sha256": "def084adea1b0eadb7d0584c1a9824748ad0d350190c36a7d32e2a1cb268006b",
+    "ported_sha256": "a34867c1b954277fb5aacec16bb9101c0ee34db6a6ab5d8f4487bfc6043e7328",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/phase2/reward_extraction.py",
+    "destination": "gambit/dataset_preparation/reward_extraction.py",
+    "source_sha256": "800e102ef0af3d8c9eb5dd983c28653a6af15d4336c64248c1181d825b73f5f2",
+    "ported_sha256": "800e102ef0af3d8c9eb5dd983c28653a6af15d4336c64248c1181d825b73f5f2",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/schemas.py",
+    "destination": "gambit/dataset_preparation/schemas.py",
+    "source_sha256": "0e80483e074408443803fec5dbd49ce8f1a38d908786fef07a675c313c77d669",
+    "ported_sha256": "0e80483e074408443803fec5dbd49ce8f1a38d908786fef07a675c313c77d669",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/transition_manifest.py",
+    "destination": "gambit/dataset_preparation/transition_manifest.py",
+    "source_sha256": "06faced5a06317b981325269216533736ab5b967f66ec46fee41d88c41279a34",
+    "ported_sha256": "06faced5a06317b981325269216533736ab5b967f66ec46fee41d88c41279a34",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/validate_dataset.py",
+    "destination": "gambit/dataset_preparation/validate_dataset.py",
+    "source_sha256": "eb33f5a9b91227f3e0e25a4685aca935b1163eb3ce07661d366b90f32e98367b",
+    "ported_sha256": "eb33f5a9b91227f3e0e25a4685aca935b1163eb3ce07661d366b90f32e98367b",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/phase2/window_manifest.py",
+    "destination": "gambit/dataset_preparation/window_manifest.py",
+    "source_sha256": "e50d603786c941e9934c9503f7dfb901a5733ee8006b8aecf94013a8ebef502e",
+    "ported_sha256": "e50d603786c941e9934c9503f7dfb901a5733ee8006b8aecf94013a8ebef502e",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/__init__.py",
+    "destination": "gambit/datasets/__init__.py",
+    "source_sha256": "efb2afd9338f48e3fda2f499cfe20f8028d086eb15dbc3da5e8cd81adf41571a",
+    "ported_sha256": "efb2afd9338f48e3fda2f499cfe20f8028d086eb15dbc3da5e8cd81adf41571a",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/builders.py",
+    "destination": "gambit/datasets/builders.py",
+    "source_sha256": "0a662f07fc8e153e292e46a48dcb4892f26c63ed6511daa3d3d22c9638318199",
+    "ported_sha256": "0a662f07fc8e153e292e46a48dcb4892f26c63ed6511daa3d3d22c9638318199",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/builders_ddp.py",
+    "destination": "gambit/datasets/builders_ddp.py",
+    "source_sha256": "365df0824b928213a6f2a696b14577ac1438457c5f839a43783291be388f3258",
+    "ported_sha256": "ca71f226a1841c4cdd3167f28bcd415b859a2361179f58edabcb0db771557c34",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/datasets/clip_dataset.py",
+    "destination": "gambit/datasets/clip_dataset.py",
+    "source_sha256": "e0541e7ddfe2efcf2fa49a7ab30098359b97a138b1f73c8d612f81b477c10d83",
+    "ported_sha256": "e0541e7ddfe2efcf2fa49a7ab30098359b97a138b1f73c8d612f81b477c10d83",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/collate.py",
+    "destination": "gambit/datasets/collate.py",
+    "source_sha256": "894c95281256df3edf686a237be78183e5c4f62f4d4f6e7373f6d99e2cd25f7e",
+    "ported_sha256": "5cacaec8accf47671117bd5ddb6a7e534abb2ef75e03ba5dff3254c84591d20b",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/datasets/manifest.py",
+    "destination": "gambit/datasets/manifest.py",
+    "source_sha256": "267609a1934be424ee8a4709bd42ac3b26cd13b4d81b9b9540d88abbbdc5ea15",
+    "ported_sha256": "267609a1934be424ee8a4709bd42ac3b26cd13b4d81b9b9540d88abbbdc5ea15",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/pk_sampler.py",
+    "destination": "gambit/datasets/pk_sampler.py",
+    "source_sha256": "b22886030249a2bf549c1b928e760d159b538f2b82b7f1e54abcd059066b2408",
+    "ported_sha256": "b22886030249a2bf549c1b928e760d159b538f2b82b7f1e54abcd059066b2408",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/telemetry_preprocess.py",
+    "destination": "gambit/datasets/telemetry_preprocess.py",
+    "source_sha256": "92ea23b3e2b7eee322e3383452430730bc76c685cce2bbc4704c2afc1d5c158d",
+    "ported_sha256": "92ea23b3e2b7eee322e3383452430730bc76c685cce2bbc4704c2afc1d5c158d",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/datasets/video_decode.py",
+    "destination": "gambit/datasets/video_decode.py",
+    "source_sha256": "8ce872e98dd9c53dec148ff461cbeae4e1aafd70341144d9d2d1826acd3f19f5",
+    "ported_sha256": "8ce872e98dd9c53dec148ff461cbeae4e1aafd70341144d9d2d1826acd3f19f5",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/__init__.py",
+    "destination": "gambit/models/__init__.py",
+    "source_sha256": "88354eb56bfc6fb167f3a3ffc768eec3a3aa19adf35df58ec287fd1177424a3a",
+    "ported_sha256": "88354eb56bfc6fb167f3a3ffc768eec3a3aa19adf35df58ec287fd1177424a3a",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/gated_fusion.py",
+    "destination": "gambit/models/gated_fusion.py",
+    "source_sha256": "1ff8a80ed51f4022cbedd76ee19e6d4e3ab06034e6eccc5d11cf794b147250d0",
+    "ported_sha256": "1ff8a80ed51f4022cbedd76ee19e6d4e3ab06034e6eccc5d11cf794b147250d0",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/inquisitor_encoder.py",
+    "destination": "gambit/models/inquisitor_encoder.py",
+    "source_sha256": "6434823d1bc30c0bd97a8f6b91d481d2b54de81904acf97dde506c88ab307955",
+    "ported_sha256": "6434823d1bc30c0bd97a8f6b91d481d2b54de81904acf97dde506c88ab307955",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/loss.py",
+    "destination": "gambit/models/loss.py",
+    "source_sha256": "459c59e3f86b0d1d0f43f3bbf0a144db7587f07309ab355d7db589b2f7a918da",
+    "ported_sha256": "459c59e3f86b0d1d0f43f3bbf0a144db7587f07309ab355d7db589b2f7a918da",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/projector_head.py",
+    "destination": "gambit/models/projector_head.py",
+    "source_sha256": "a3822d38eb0d5aabaaf3a1277eb686ca15fc6b9581fde916f8be347caf59173d",
+    "ported_sha256": "a3822d38eb0d5aabaaf3a1277eb686ca15fc6b9581fde916f8be347caf59173d",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/rhythm_branch.py",
+    "destination": "gambit/models/rhythm_branch.py",
+    "source_sha256": "0a4356a7aeaf585cd83b8654fd409ab51e6a6d3a0d8db1a76f22150870dcf0b5",
+    "ported_sha256": "0a4356a7aeaf585cd83b8654fd409ab51e6a6d3a0d8db1a76f22150870dcf0b5",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/telemetry_fusion.py",
+    "destination": "gambit/models/telemetry_fusion.py",
+    "source_sha256": "51aead870389c6c70a1ad0063e7beecfd870ba54c77f059eee1ec9e313747fe3",
+    "ported_sha256": "51aead870389c6c70a1ad0063e7beecfd870ba54c77f059eee1ec9e313747fe3",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/temporal_tcn.py",
+    "destination": "gambit/models/temporal_tcn.py",
+    "source_sha256": "ac572ecdb5350963675dbdfa842304b94e1c062c9bb68fa8c54ba937e05fe7fa",
+    "ported_sha256": "ac572ecdb5350963675dbdfa842304b94e1c062c9bb68fa8c54ba937e05fe7fa",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/temporal_transformer.py",
+    "destination": "gambit/models/temporal_transformer.py",
+    "source_sha256": "3ed679011f8959d5f65277f502c8221c31d268121187a51ed602603a305ccbbe",
+    "ported_sha256": "3ed679011f8959d5f65277f502c8221c31d268121187a51ed602603a305ccbbe",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/types.py",
+    "destination": "gambit/models/types.py",
+    "source_sha256": "d9a6c6dc9d1b5fe69282bf66b4a1b7691e6da251d55279d0d06ecd22d04b9799",
+    "ported_sha256": "d9a6c6dc9d1b5fe69282bf66b4a1b7691e6da251d55279d0d06ecd22d04b9799",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/video_encoder.py",
+    "destination": "gambit/models/video_encoder.py",
+    "source_sha256": "dd0ad4c2f30fdef3f856b58222ccecc7476f0a6a3e429e1794ab5712fe5b56b2",
+    "ported_sha256": "dd0ad4c2f30fdef3f856b58222ccecc7476f0a6a3e429e1794ab5712fe5b56b2",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/view_branch.py",
+    "destination": "gambit/models/view_branch.py",
+    "source_sha256": "5529ded6978d13d4b589f3933f2fc41410e0f4726d4c0032684352f201550088",
+    "ported_sha256": "5529ded6978d13d4b589f3933f2fc41410e0f4726d4c0032684352f201550088",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/models/where_branch.py",
+    "destination": "gambit/models/where_branch.py",
+    "source_sha256": "876aacf96ebdaa6aace9be4d5135f242ff940761c2132bde436ef64f406face0",
+    "ported_sha256": "876aacf96ebdaa6aace9be4d5135f242ff940761c2132bde436ef64f406face0",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/__init__.py",
+    "destination": "gambit/rl/__init__.py",
+    "source_sha256": "65d5356432c503a36e8e20bae86191f3415928919ba5572f74fe3c750fc2dec8",
+    "ported_sha256": "65d5356432c503a36e8e20bae86191f3415928919ba5572f74fe3c750fc2dec8",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/datasets/__init__.py",
+    "destination": "gambit/rl/datasets/__init__.py",
+    "source_sha256": "a4ac1caf22bae8028e26c7d8d7c9b1736f8d0471c35c2b6fca75d7e32d00379b",
+    "ported_sha256": "a4ac1caf22bae8028e26c7d8d7c9b1736f8d0471c35c2b6fca75d7e32d00379b",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/datasets/transition_collate.py",
+    "destination": "gambit/rl/datasets/transition_collate.py",
+    "source_sha256": "30fe39ce45f564f5be6d532e575a70ea2853f177043dd6aea500950767eea8f5",
+    "ported_sha256": "30fe39ce45f564f5be6d532e575a70ea2853f177043dd6aea500950767eea8f5",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/datasets/transition_dataset.py",
+    "destination": "gambit/rl/datasets/transition_dataset.py",
+    "source_sha256": "ee2956aa0d0e01a79a1bbcab39a2b52d81e555ddcaf6f1ba0a25973ed01e08d7",
+    "ported_sha256": "ee2956aa0d0e01a79a1bbcab39a2b52d81e555ddcaf6f1ba0a25973ed01e08d7",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/models/__init__.py",
+    "destination": "gambit/rl/models/__init__.py",
+    "source_sha256": "bdbf46b9146ef5dea84c10502dac896376bdfacc64a94c2944d8793b540f7824",
+    "ported_sha256": "bdbf46b9146ef5dea84c10502dac896376bdfacc64a94c2944d8793b540f7824",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/models/actor_critic.py",
+    "destination": "gambit/rl/models/actor_critic.py",
+    "source_sha256": "03e7fbf5360ab213b65348ec0e560ff1bdc19c5504e66b77d6229d3882c65bd4",
+    "ported_sha256": "03e7fbf5360ab213b65348ec0e560ff1bdc19c5504e66b77d6229d3882c65bd4",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/models/advanced_policy.py",
+    "destination": "gambit/rl/models/advanced_policy.py",
+    "source_sha256": "c5cac41786820633c053872ab553a059f4d5a90f8f127d60740a7f94376e2679",
+    "ported_sha256": "c5cac41786820633c053872ab553a059f4d5a90f8f127d60740a7f94376e2679",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/models/policy.py",
+    "destination": "gambit/rl/models/policy.py",
+    "source_sha256": "2e6458e7ca94d1c0ae6c8146e7edcfe520d4a85c9866bb4fa51e8a347ee0014f",
+    "ported_sha256": "2e6458e7ca94d1c0ae6c8146e7edcfe520d4a85c9866bb4fa51e8a347ee0014f",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/models/q_network.py",
+    "destination": "gambit/rl/models/q_network.py",
+    "source_sha256": "e1373928f0be2726eff66d51b4da496d5c3e5d7d0846950454c82657bddf1f9e",
+    "ported_sha256": "e1373928f0be2726eff66d51b4da496d5c3e5d7d0846950454c82657bddf1f9e",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/models/v_network.py",
+    "destination": "gambit/rl/models/v_network.py",
+    "source_sha256": "91f56d263364fcc9ef0815813ae9cd04d7409bd0f62266d6d21efa2d9fc0eb32",
+    "ported_sha256": "91f56d263364fcc9ef0815813ae9cd04d7409bd0f62266d6d21efa2d9fc0eb32",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/__init__.py",
+    "destination": "gambit/rl/online_rl/__init__.py",
+    "source_sha256": "c5922298f9760e571f60e3ab87c969f43d00e9e63a5c44f8d804b363bfc0c2b5",
+    "ported_sha256": "c5922298f9760e571f60e3ab87c969f43d00e9e63a5c44f8d804b363bfc0c2b5",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/action_schema.py",
+    "destination": "gambit/rl/online_rl/action_schema.py",
+    "source_sha256": "a1a87728e8f596dc99636c4deb3edad40c897beac77c54d6d7e77bcbdfb0f005",
+    "ported_sha256": "a1a87728e8f596dc99636c4deb3edad40c897beac77c54d6d7e77bcbdfb0f005",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/actor_critic.py",
+    "destination": "gambit/rl/online_rl/actor_critic.py",
+    "source_sha256": "1d87928f273a9904fb2bd8f1ad33d001ca53d7359523d7e0b2eedcc886baf4c2",
+    "ported_sha256": "1d87928f273a9904fb2bd8f1ad33d001ca53d7359523d7e0b2eedcc886baf4c2",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/build_telemetry_npz.py",
+    "destination": "gambit/rl/online_rl/build_telemetry_npz.py",
+    "source_sha256": "73662c4ae7bc43b9e27bb801aa6b7a32f3cf236d2facabe4785e1d8dc16e93e6",
+    "ported_sha256": "e89a2bc61600eb7b995ca341ae1208ee407fd37debc7c2354378b380d82419a5",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/checkpoint_registry.py",
+    "destination": "gambit/rl/online_rl/checkpoint_registry.py",
+    "source_sha256": "173b2e3e8859b5c07e3c6cf7c5c46326f955628b650d0962fa9ecc3efc76d90d",
+    "ported_sha256": "173b2e3e8859b5c07e3c6cf7c5c46326f955628b650d0962fa9ecc3efc76d90d",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/core_action_projector.py",
+    "destination": "gambit/rl/online_rl/core_action_projector.py",
+    "source_sha256": "95cf4bd6b02e30b5aa67c859121bfb381bdee732495c1fcad15cd5f73ac97673",
+    "ported_sha256": "95cf4bd6b02e30b5aa67c859121bfb381bdee732495c1fcad15cd5f73ac97673",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/distillation_dataset.py",
+    "destination": "gambit/rl/online_rl/distillation_dataset.py",
+    "source_sha256": "6ebd1a80a7b5b19038e362349bbd711f782680573aaa03799a16e14828fd5b5d",
+    "ported_sha256": "6ebd1a80a7b5b19038e362349bbd711f782680573aaa03799a16e14828fd5b5d",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/distributed_utils.py",
+    "destination": "gambit/rl/online_rl/distributed_utils.py",
+    "source_sha256": "c9e7694297881eda9cb1f4cc27455425eff40abcf703c02b55b5b72d4643fbb2",
+    "ported_sha256": "c9e7694297881eda9cb1f4cc27455425eff40abcf703c02b55b5b72d4643fbb2",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/evaluate_policy.py",
+    "destination": "gambit/rl/online_rl/evaluate_policy.py",
+    "source_sha256": "41b70a8450c3aabed87e4cfcdb30afb79f11dc920e0731e6ace3d175be899e73",
+    "ported_sha256": "41b70a8450c3aabed87e4cfcdb30afb79f11dc920e0731e6ace3d175be899e73",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/hybrid_distribution.py",
+    "destination": "gambit/rl/online_rl/hybrid_distribution.py",
+    "source_sha256": "33e6df4ff4880b9a91b733e41352a5b504618482c5cfc5c3a7039a284aafa801",
+    "ported_sha256": "33e6df4ff4880b9a91b733e41352a5b504618482c5cfc5c3a7039a284aafa801",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/invariant_check.py",
+    "destination": "gambit/rl/online_rl/invariant_check.py",
+    "source_sha256": "9bc6d3099d3664afc79e7b3c8cd763061ff099aea0095dfb973f7e7750f61a9d",
+    "ported_sha256": "2bf41fe7ac6683e9b0e924a0dbd2b5e9b9da98056c15307d8912337835658e61",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/lr_schedule.py",
+    "destination": "gambit/rl/online_rl/lr_schedule.py",
+    "source_sha256": "6f2b9d781ec584c0c89b8bf9bc2101f87508470ce4bb497a749207ddd4101c83",
+    "ported_sha256": "7195645308152c3162d22bc506c4d67c38d75b87dd1e4679d0139d66626e536e",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/multi_area_runner.py",
+    "destination": "gambit/rl/online_rl/multi_area_runner.py",
+    "source_sha256": "66deba92ad9606efb5343ba322d630e2579b82948d37f4e096940835e4e2caa3",
+    "ported_sha256": "66deba92ad9606efb5343ba322d630e2579b82948d37f4e096940835e4e2caa3",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/obs_normalizer.py",
+    "destination": "gambit/rl/online_rl/obs_normalizer.py",
+    "source_sha256": "659c123938c8737d01793b72977e5c8acc370906f6ce5a900287597ad29fbbd5",
+    "ported_sha256": "5cae7ae375fc4f561a3d4ebc5778ce348a815105b754a515f257a56ff411a76f",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/opponent_pool.py",
+    "destination": "gambit/rl/online_rl/opponent_pool.py",
+    "source_sha256": "e70fa444507a400c7100ce58d2cd4feae829682d2a7af81e76347ee08ab016ab",
+    "ported_sha256": "e70fa444507a400c7100ce58d2cd4feae829682d2a7af81e76347ee08ab016ab",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/ppo_loss.py",
+    "destination": "gambit/rl/online_rl/ppo_loss.py",
+    "source_sha256": "c3e4bb6801d9839f2199957d43176db1cfb9b873f5e96752b2ff5bc5d9a1051e",
+    "ported_sha256": "c3e4bb6801d9839f2199957d43176db1cfb9b873f5e96752b2ff5bc5d9a1051e",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/reward_builder.py",
+    "destination": "gambit/rl/online_rl/reward_builder.py",
+    "source_sha256": "a9984145cdbcaa36b2a572739ef9b9df7a5b81627c0d7b8986442c0d9d60bbdf",
+    "ported_sha256": "a9984145cdbcaa36b2a572739ef9b9df7a5b81627c0d7b8986442c0d9d60bbdf",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/rollout_buffer.py",
+    "destination": "gambit/rl/online_rl/rollout_buffer.py",
+    "source_sha256": "2ac4024b7085fb128658d06fdf2f8164bd1fb8443f49291cd7e730625f7994a6",
+    "ported_sha256": "2ac4024b7085fb128658d06fdf2f8164bd1fb8443f49291cd7e730625f7994a6",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/selfplay_runner.py",
+    "destination": "gambit/rl/online_rl/selfplay_runner.py",
+    "source_sha256": "4b0eb879298a1659bb944d352b75937e5f184a2febc11b31f8c9730b7d02ac85",
+    "ported_sha256": "ec12b2c2dbf64274f748bbcfcad5bbbf68bb7a3253b6233c3ef126d20260de1e",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/shot_geometry_summary.py",
+    "destination": "gambit/rl/online_rl/shot_geometry_summary.py",
+    "source_sha256": "7a8ef2187710aebe55a9b1f53ccc1cf6072bcf76b4a9af552f21d7b9d834d44f",
+    "ported_sha256": "7a8ef2187710aebe55a9b1f53ccc1cf6072bcf76b4a9af552f21d7b9d834d44f",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/telemetry_encoder.py",
+    "destination": "gambit/rl/online_rl/telemetry_encoder.py",
+    "source_sha256": "856ad998301eab8e5b5a614035b2789309df9701508aa44384f86f823ac9d47f",
+    "ported_sha256": "9f11c776a47b76884b0132163f731492223b92cabdc631a270b09b064756e2ac",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/train_ppo.py",
+    "destination": "gambit/rl/online_rl/train_ppo.py",
+    "source_sha256": "4a98eeef47bb757ad6e67d2c0e413cd8bb2a850f7349f19c8af339fbb9ea63f5",
+    "ported_sha256": "a30f0599d4e5bfc1721a6ae433aa77a679625be2e3dc35d4de36d4446e935ddb",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/vectorized_buffer.py",
+    "destination": "gambit/rl/online_rl/vectorized_buffer.py",
+    "source_sha256": "cc064fe5e1c2193968ce4da4f07f8604bcc6537bd518d4b379cc012ebe1f35d7",
+    "ported_sha256": "cc064fe5e1c2193968ce4da4f07f8604bcc6537bd518d4b379cc012ebe1f35d7",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/vectorized_runner.py",
+    "destination": "gambit/rl/online_rl/vectorized_runner.py",
+    "source_sha256": "82392ed42bc02be84658552e9f69a288ef77ab5d4f191963525fd520d81facdd",
+    "ported_sha256": "82392ed42bc02be84658552e9f69a288ef77ab5d4f191963525fd520d81facdd",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/visual_actor_critic.py",
+    "destination": "gambit/rl/online_rl/visual_actor_critic.py",
+    "source_sha256": "3850e1eff4aa7fbc978e5d760a61f1120dd68e4c6d6813ab01d6bfce7d83c891",
+    "ported_sha256": "3de17566373405f9f76382633496f12fa550f7aeb402b992910b16344426be76",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/online_rl/visual_runner.py",
+    "destination": "gambit/rl/online_rl/visual_runner.py",
+    "source_sha256": "be7deb00dbb5e3e3a1af3948a9bca19229d309332363fd796cf7e205b7468de9",
+    "ported_sha256": "be7deb00dbb5e3e3a1af3948a9bca19229d309332363fd796cf7e205b7468de9",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/online_rl/weapon_state_summary.py",
+    "destination": "gambit/rl/online_rl/weapon_state_summary.py",
+    "source_sha256": "45a85fbfc4e07220e7caa4e03b3395a4c409a6390927a04828c0204d17a7d86d",
+    "ported_sha256": "45a85fbfc4e07220e7caa4e03b3395a4c409a6390927a04828c0204d17a7d86d",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/training/__init__.py",
+    "destination": "gambit/rl/training/__init__.py",
+    "source_sha256": "95f7df3dcb2e5d0ff9d10d31a9841c25a10fbafb1fd04b102be813ab0cfd6083",
+    "ported_sha256": "95f7df3dcb2e5d0ff9d10d31a9841c25a10fbafb1fd04b102be813ab0cfd6083",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/training/eval_bc.py",
+    "destination": "gambit/rl/training/eval_bc.py",
+    "source_sha256": "ca7982d9886e1c26a634c82ff673fe8744f479d26f3b811ba4df3c57d2a03891",
+    "ported_sha256": "5e4d3bcc3506c635a3a6027fea949e7deefcae412e0dd91fffc6de719fcc94d1",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/training/eval_iql.py",
+    "destination": "gambit/rl/training/eval_iql.py",
+    "source_sha256": "c0eae21926678669429d3a9adf17a06c8834966a3192d78cc6efce8901097532",
+    "ported_sha256": "a497b628b609130ae068c05ea6d2fdd6103058b9da5e41d13717fb49e4a967a2",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/training/train_bc.py",
+    "destination": "gambit/rl/training/train_bc.py",
+    "source_sha256": "fbda7505e92b7708baf2be64e4952b90c60b2a7fe2f6adef0f8a818d8f9afdef",
+    "ported_sha256": "3fa4b7ad61ea079972fc80357ed3573691c56bde208ce2ef1b97721fb7ee8b02",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/training/train_bc_advanced.py",
+    "destination": "gambit/rl/training/train_bc_advanced.py",
+    "source_sha256": "1603c5bb6e12f67df0e4f22bec241166661b81fbbf9063a4f3a2149e852969c9",
+    "ported_sha256": "04a0de73354d54d00266f711e8175177e05d1c439c5b55765d9e1755925912d9",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/training/train_iql.py",
+    "destination": "gambit/rl/training/train_iql.py",
+    "source_sha256": "12f8622161e2757cced4b40541745e0eea34ed2ac6fa0afad32a2602a6446a25",
+    "ported_sha256": "06d15e6277156975275aa27d16a17298283491838e40d7fd0294f228bdc05970",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/utils/__init__.py",
+    "destination": "gambit/rl/utils/__init__.py",
+    "source_sha256": "987fb87ba83a725e74faa0bd2b83dd2efb6d25addfcedff576a6a3518d25c691",
+    "ported_sha256": "987fb87ba83a725e74faa0bd2b83dd2efb6d25addfcedff576a6a3518d25c691",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/utils/checkpointing.py",
+    "destination": "gambit/rl/utils/checkpointing.py",
+    "source_sha256": "0b5bf323bc6957421d84f56824d5f02cdc1c662fe95a8fbc39d9299e229d2f68",
+    "ported_sha256": "0b5bf323bc6957421d84f56824d5f02cdc1c662fe95a8fbc39d9299e229d2f68",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/utils/metrics.py",
+    "destination": "gambit/rl/utils/metrics.py",
+    "source_sha256": "e86eb4a3ed5edfd8f6af6cf8f81e6f3622ab0f3ead89fafa2139a837ba6fa1f9",
+    "ported_sha256": "e86eb4a3ed5edfd8f6af6cf8f81e6f3622ab0f3ead89fafa2139a837ba6fa1f9",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/rl/utils/normalization.py",
+    "destination": "gambit/rl/utils/normalization.py",
+    "source_sha256": "169d0a35de343a50799ac84ad8fda87d00477fb57c9ec3ba1affa5549e48111a",
+    "ported_sha256": "169d0a35de343a50799ac84ad8fda87d00477fb57c9ec3ba1affa5549e48111a",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/__init__.py",
+    "destination": "gambit/training/__init__.py",
+    "source_sha256": "3d750324f4e26c20506c1408ab98dbab7e35c533c2fad64ca2f9989675cef00a",
+    "ported_sha256": "3d750324f4e26c20506c1408ab98dbab7e35c533c2fad64ca2f9989675cef00a",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/checkpoint.py",
+    "destination": "gambit/training/checkpoint.py",
+    "source_sha256": "8690f8681c3360033a351585c73a127924094e7016baac34f32acb857dcd7ae0",
+    "ported_sha256": "8690f8681c3360033a351585c73a127924094e7016baac34f32acb857dcd7ae0",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/config.py",
+    "destination": "gambit/training/config.py",
+    "source_sha256": "e7a60570683736cdb83da840a7df20db87693b28dafab3492ca365a071e09934",
+    "ported_sha256": "e7a60570683736cdb83da840a7df20db87693b28dafab3492ca365a071e09934",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/ddp_utils.py",
+    "destination": "gambit/training/ddp_utils.py",
+    "source_sha256": "1a57b3dfb4120163a6a9962ad60c56e0258f1a22c16ba5758bbd1c15aca9029b",
+    "ported_sha256": "1a57b3dfb4120163a6a9962ad60c56e0258f1a22c16ba5758bbd1c15aca9029b",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/distributed_pk_sampler.py",
+    "destination": "gambit/training/distributed_pk_sampler.py",
+    "source_sha256": "0ed8b176b6f679355b6af26b2fb6759951fb071765864fc1bdd8bca8b6e80ade",
+    "ported_sha256": "0ed8b176b6f679355b6af26b2fb6759951fb071765864fc1bdd8bca8b6e80ade",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/ema.py",
+    "destination": "gambit/training/ema.py",
+    "source_sha256": "e84c5f31378483a5b46be16f3fae70244c800edbca19aea6a34420d7a81b91a4",
+    "ported_sha256": "e84c5f31378483a5b46be16f3fae70244c800edbca19aea6a34420d7a81b91a4",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/gather.py",
+    "destination": "gambit/training/gather.py",
+    "source_sha256": "8286c6a368062afc7a8c3e388c322f9ae25764ecbead626c1bfc6495b98f36de",
+    "ported_sha256": "8286c6a368062afc7a8c3e388c322f9ae25764ecbead626c1bfc6495b98f36de",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "src/training/train_ddp.py",
+    "destination": "gambit/training/train_ddp.py",
+    "source_sha256": "86bf6c9255de5a20eabdd4b40e30f8e3f32a03fb17df286755694a699ffc8fd3",
+    "ported_sha256": "10bcd53f17ede40c1a1a52ca276f6757596aee82c7804cacd441a9d047d95398",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "ACTOR231_PPO_TRAINING_DATA.md",
+    "destination": "reference/ACTOR231_PPO_TRAINING_DATA.md",
+    "source_sha256": "7999740117c687ece56a266583bdb82276b33e5b5fd869af2ebb5d61689c97e1",
+    "ported_sha256": "7999740117c687ece56a266583bdb82276b33e5b5fd869af2ebb5d61689c97e1",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "ACTOR231_SCHEMA.json",
+    "destination": "reference/ACTOR231_SCHEMA.json",
+    "source_sha256": "1eb9d10bc27e1b8c8261406ab61cecf7d866d45ff004028e8b535de3ca744329",
+    "ported_sha256": "1eb9d10bc27e1b8c8261406ab61cecf7d866d45ff004028e8b535de3ca744329",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "ACTOR231_SCHEMA.md",
+    "destination": "reference/ACTOR231_SCHEMA.md",
+    "source_sha256": "0dec26edbd9707b02190c9ec471b1bdd68d4439c67a35ebc359adc49f8e68b42",
+    "ported_sha256": "0dec26edbd9707b02190c9ec471b1bdd68d4439c67a35ebc359adc49f8e68b42",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "LOCAL45_RHYTHM_SLOT_HISTORY.md",
+    "destination": "reference/LOCAL45_RHYTHM_SLOT_HISTORY.md",
+    "source_sha256": "4ab44eba13bd1c1252dd334ccce795cb77c16bcb9e127baaeda1fd523692bd63",
+    "ported_sha256": "4ab44eba13bd1c1252dd334ccce795cb77c16bcb9e127baaeda1fd523692bd63",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "PHASE4_4_PPO_TRAINING_DETAILS.md",
+    "destination": "reference/PHASE4_4_PPO_TRAINING_DETAILS.md",
+    "source_sha256": "5d3070e93fa48905c07cf1e1ae91e1f857e0d8970f25a75b676a4fc44b0e22d5",
+    "ported_sha256": "5d3070e93fa48905c07cf1e1ae91e1f857e0d8970f25a75b676a4fc44b0e22d5",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+    "destination": "reference/examiner_bank/00_contract/ANCHOR_CONTROLLER_SPEC.json",
+    "source_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+    "ported_sha256": "2f8e094891ec2f940e52c643c508405f137b52132f8b3e89ee9609ecc8c59dda",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/CALIBRATION_CONTRACT.json",
+    "destination": "reference/examiner_bank/00_contract/CALIBRATION_CONTRACT.json",
+    "source_sha256": "5b08f76830797e7074faad69262a70445a96605ecad10128b01918a78c479a47",
+    "ported_sha256": "5b08f76830797e7074faad69262a70445a96605ecad10128b01918a78c479a47",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/CANDIDATE_LIBRARY.json",
+    "destination": "reference/examiner_bank/00_contract/CANDIDATE_LIBRARY.json",
+    "source_sha256": "c269b6d38a84101a6990bdecbdd44aa25bd7dd875bd98f41fa77067d2dc5d037",
+    "ported_sha256": "c269b6d38a84101a6990bdecbdd44aa25bd7dd875bd98f41fa77067d2dc5d037",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/00_contract/ROUND_ROBIN_SCHEDULE.json",
+    "destination": "reference/examiner_bank/00_contract/ROUND_ROBIN_SCHEDULE.json",
+    "source_sha256": "958f3bf29146e5d8de817c16c00eb3248803cbdf27c1649f2d81c35460c8aed5",
+    "ported_sha256": "958f3bf29146e5d8de817c16c00eb3248803cbdf27c1649f2d81c35460c8aed5",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/02_analysis/ALL_CANDIDATE_METRICS.json",
+    "destination": "reference/examiner_bank/02_analysis/ALL_CANDIDATE_METRICS.json",
+    "source_sha256": "da14018ee6edb900453a1f30319c90d6a9a029b2150fce8f07b16a813e44ee8a",
+    "ported_sha256": "da14018ee6edb900453a1f30319c90d6a9a029b2150fce8f07b16a813e44ee8a",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/02_analysis/PAIR_DIAGNOSTICS.csv",
+    "destination": "reference/examiner_bank/02_analysis/PAIR_DIAGNOSTICS.csv",
+    "source_sha256": "04bc8d1c951c93b8496472829ec0098a689f07a2095afca7e06e9d532d4b2304",
+    "ported_sha256": "04bc8d1c951c93b8496472829ec0098a689f07a2095afca7e06e9d532d4b2304",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/02_analysis/SELECTION_AUDIT.json",
+    "destination": "reference/examiner_bank/02_analysis/SELECTION_AUDIT.json",
+    "source_sha256": "8c0bf53a04f1439aab140f6fe0bf7bbc7a903324ef1e51501a51ba59e9ed14a1",
+    "ported_sha256": "8c0bf53a04f1439aab140f6fe0bf7bbc7a903324ef1e51501a51ba59e9ed14a1",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/02_analysis/TECHNICAL_AUDIT.json",
+    "destination": "reference/examiner_bank/02_analysis/TECHNICAL_AUDIT.json",
+    "source_sha256": "b112ca61411a8f6b1304a838dbf737c9edff6a54e47ea30c9adfc4429664ab8a",
+    "ported_sha256": "b112ca61411a8f6b1304a838dbf737c9edff6a54e47ea30c9adfc4429664ab8a",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/BOT_BANK_HASHES.sha256",
+    "destination": "reference/examiner_bank/BOT_BANK_HASHES.sha256",
+    "source_sha256": "82c33df48a75ac96a996d819b8041741a8ff7afdbfa37dd4d01be608ee8742ba",
+    "ported_sha256": "82c33df48a75ac96a996d819b8041741a8ff7afdbfa37dd4d01be608ee8742ba",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/BOT_CALIBRATION_REPORT.md",
+    "destination": "reference/examiner_bank/BOT_CALIBRATION_REPORT.md",
+    "source_sha256": "0c09f8f979ac627e68206f444639d3e6d15ee775a1379f2508955602ec0df563",
+    "ported_sha256": "0c09f8f979ac627e68206f444639d3e6d15ee775a1379f2508955602ec0df563",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/BOT_PAYOFF_MATRIX.csv",
+    "destination": "reference/examiner_bank/BOT_PAYOFF_MATRIX.csv",
+    "source_sha256": "098e97c3c00a3d945e592bce5a696138a2079e986854a5942dd23ca9e852cc8f",
+    "ported_sha256": "098e97c3c00a3d945e592bce5a696138a2079e986854a5942dd23ca9e852cc8f",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/BOT_RATINGS_CUDA.json",
+    "destination": "reference/examiner_bank/BOT_RATINGS_CUDA.json",
+    "source_sha256": "8f5a059dd83b7ae6fb13799fbfc2fb92b13e4bfe503fe51d05ff2daf0a7c5675",
+    "ported_sha256": "8f5a059dd83b7ae6fb13799fbfc2fb92b13e4bfe503fe51d05ff2daf0a7c5675",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/tandemfps_paper_draft1_package_v001/evidence/examiner_bank/experiments/paper_goal3_cuda_examiner_bank_v001/FINAL_CUDA_BOT_BANK.json",
+    "destination": "reference/examiner_bank/FINAL_CUDA_BOT_BANK.json",
+    "source_sha256": "46d06882fe47308a89c45650456954165c22360c5765f4b0f3b29774979b8b92",
+    "ported_sha256": "46d06882fe47308a89c45650456954165c22360c5765f4b0f3b29774979b8b92",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase4_active_diagnostic/phase4_6_final_integration/laptop_demo_package_v001/phase4_6_laptop_demo_v001_20260713_212403/requirements-linux-cpu.lock",
+    "destination": "requirements-unity-historical.txt",
+    "source_sha256": "b6db189c8d7d428390fd78882f4d9e78bebd658181f42816117e961d2e34df45",
+    "changes": "Verbatim copy",
+    "ported_sha256": "b6db189c8d7d428390fd78882f4d9e78bebd658181f42816117e961d2e34df45"
+  },
+  {
+    "source": "src/__init__.py",
+    "destination": "scripts/__init__.py",
+    "source_sha256": "27cf22e61c174552cbaa74243989c0f302592b2a284c72e4bcb0ad01a50ba176",
+    "ported_sha256": "27cf22e61c174552cbaa74243989c0f302592b2a284c72e4bcb0ad01a50ba176",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "scripts/phase6_run_bayesian_scoring_demo.py",
+    "destination": "scripts/assess_player_skill.py",
+    "source_sha256": "923aac35f1c39a032d7a9a6597f9a6d39d684d1fbf60ad90fe685fc968cbacef",
+    "ported_sha256": "ffcf2f1c4a7e25a485bbd927ba81c38ef6ae7dbca17ad4053fe97ee78d7bb201",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase6_examiner_action_audit_match.py",
+    "destination": "scripts/audit_examiner_actions.py",
+    "source_sha256": "701788412c722e08717a900e951c1a3bbda9052cc2efb333a79953776632bc84",
+    "ported_sha256": "85c14fadbc8b01ae07254003f432c9414c9246c4d35bba0f8b0bf632e17efd10",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_autonomous_baseline.py",
+    "destination": "scripts/autonomous_combat_baseline.py",
+    "source_sha256": "05a21da1e71461c1edb6a337a0db2644ad09e7919adb3a167fa3a20f18d4f84f",
+    "ported_sha256": "99aeda796eb5f58f4875c155ebed70531ff927b7c434bb40f6f55b874c248ab5",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_c_build_local45_normalizer.py",
+    "destination": "scripts/build_combat_normalizer.py",
+    "source_sha256": "ef00afc14bbc08e028193feafea641a0e1ef1202cacc16861d893b67ca420aef",
+    "ported_sha256": "ab1265e75b39fa08b318f396c088b8d9e2bda8c080316f684d2b0ecb97d01241",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/build_phase3_action_targets.py",
+    "destination": "scripts/build_command_targets.py",
+    "source_sha256": "9d536bf9167a9a70ff4803bd422dc5214f533da4b83dfd63ce8d27bd40cd9b1b",
+    "ported_sha256": "f074af155f29bea69fee0a3ad6b4d1a95054d78573b8ce87f14608e9cb460fc5",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase6_calibrate_examiner_bank.py",
+    "destination": "scripts/calibrate_examiner_bank.py",
+    "source_sha256": "b818cfed740630d21982b11c8f8be86fd3e727b68e2e9426774567a107372a2f",
+    "ported_sha256": "10973bb0f47126596981c494e0c3d6b63d139a326812bf8f2c06c79925aeba7b",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/check_phase3_dataset.py",
+    "destination": "scripts/check_command_dataset.py",
+    "source_sha256": "f7faf20b6041feb00636d3ab65689c584915e5b6dfa2ef12b8d22f04fd6726b8",
+    "ported_sha256": "c3fa5389e7ef2389b3a8055f385a66583b74019b029f185c50f1a1332e603053",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/check_recurrent_distillation_delta.py",
+    "destination": "scripts/check_recurrent_initialization.py",
+    "source_sha256": "5b4d655059cc9c42c1b8ac3d3dd223dfa2bd0b09732e679db377271939907ffe",
+    "ported_sha256": "562defbccfebb50dfe42d0cd69ccaf3b0643e8f260ef327b39374c2b338eccb8",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_collect_gvg_dagger_v2_policy_states.py",
+    "destination": "scripts/collect_combat_dagger.py",
+    "source_sha256": "a5dbc72d00ef61454fc1580de77596a2ccb38de8e58a0744d3d9fb9ad7bd9d08",
+    "ported_sha256": "9beb89beb2e1287387bad28c89a1c1c28e7f58b0291df740a7cc5810d692aec9",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_c_collect_local45_teacher.py",
+    "destination": "scripts/collect_combat_teacher.py",
+    "source_sha256": "e704804007128037e50bd3581508358f874897a4a51433de5685da96ce6b8979",
+    "ported_sha256": "d5c9c687ec129198e2880ffbc4b1384597a17de5c03c1cafad03cb98942657d5",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_dagger_collect.py",
+    "destination": "scripts/collect_navigation_dagger.py",
+    "source_sha256": "6292302cc72b02cb018c1ef54de8bb016e8a1ebb343d570301f59fcc0b10f51b",
+    "ported_sha256": "276e481e58147d40119a28fde09a6d4d16118058a6a341f7e2a4f2bc4444b038",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_hunter_live.py",
+    "destination": "scripts/collect_navigation_rollouts.py",
+    "source_sha256": "63ab5abb9bb1dcf770fbbbde6a93e5cf8156a6c46e9c2c20ff85e1dbcb35ec72",
+    "ported_sha256": "c49b21478da1b3ba9899cb2d5fd517fa0ce26e1ad6887c9ba43cb9a1aac701d1",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_c_localobs_common.py",
+    "destination": "scripts/combat_observations.py",
+    "source_sha256": "ee0680c353a48c5108d52119e733fb0cde0ecf5c466a6091b7eb5506079a0753",
+    "ported_sha256": "ee0680c353a48c5108d52119e733fb0cde0ecf5c466a6091b7eb5506079a0753",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "scripts/phase3v2_tiny_ppo_canary.py",
+    "destination": "scripts/combat_ppo_canary.py",
+    "source_sha256": "0b0e443f468a6edd5c20cffb2c08d51f42ca89707235eceb391183dfe39dcd0b",
+    "ported_sha256": "db83197da70a628e2aded64117bbe883282de2041c6393eaef221f812b8ee3fe",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_ppo_loss_smoke.py",
+    "destination": "scripts/combat_ppo_update.py",
+    "source_sha256": "c6279e581f8ca45f06d053c98760f41988d349fc7bf576199533b431c041813c",
+    "ported_sha256": "589dd10f1d40c40ad435e62cf6c6d7cdc5c346ccf8b1fbc9052026bae347ddc5",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_ppo_readiness_common.py",
+    "destination": "scripts/combat_runtime.py",
+    "source_sha256": "98e0be0b33bed129a5737685e93a7ab352d22f2b02bdd2d8551ed67c64f09f00",
+    "ported_sha256": "c7b56ac3c406ce50cf858c8eb3c87fad798055d29df108d3b298d3990f1d5d73",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase4_4g_common.py",
+    "destination": "scripts/combat_specialist_families.py",
+    "source_sha256": "ed722d557f6f265a84cdd68d0810ec66f8d1ccf3d8d01401e034a333bad2b900",
+    "ported_sha256": "edf936b0749e4a336c0955f80c84c2f66416530e0ee786287456213227522de7",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/repo_overlay/experiments/phase6_population_league_psro/13_final_selection/phase6_release_match_batch.py",
+    "destination": "scripts/dual_policy_runtime.py",
+    "source_sha256": "f6cb612b41caa7f3d68796208471bbca987b0a2b174c2726fbf9a0b344d4ada8",
+    "ported_sha256": "fcd830604f1121aec8b263c0744ea29cee110799f6aa3a77ba60de210b13278e",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/repo_overlay/experiments/phase6_demo_release_v003/01_showcase/d2_recovery/minimum_viable_hunter/tools/minimum_cert_match.py",
+    "destination": "scripts/encounter_runtime.py",
+    "source_sha256": "8877c38636ed51106145d0d8b9dda16405f9d7b2b57ca8cb981a5856fbafaad6",
+    "ported_sha256": "b797a9cca746f10ef8b7ad48f4707b767551a61294a27fc74731164452db8ffd",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_navigator_eval.py",
+    "destination": "scripts/evaluate_navigation.py",
+    "source_sha256": "8f08466baab3e3575ea51323ea46aa2955546bc00a3d78cfd917666921ac845a",
+    "ported_sha256": "11068ce37f346de431a575da17cf846edd46f706fb09b0af62a1326fe7b351d3",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase6_examiner_bank_match.py",
+    "destination": "scripts/examiner_match.py",
+    "source_sha256": "49750c7921c7c96c72b749c0dbc97399b04c011d5522122c0f449064f7277ab5",
+    "ported_sha256": "902611d248b33cdbd447064930abd001e3303d653f8cd08156adca15291da81a",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/runtime/research_repaired_match.py",
+    "destination": "scripts/frozen_hybrid_runtime.py",
+    "source_sha256": "79f1c84efdb718d12cab771959906cb7affcbcb34f95b300f65420f2c2b58e3b",
+    "ported_sha256": "9110a0b63f1149ac284463d51f71578b8937a5eacf5abf8c192f0f8850354953",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_layout_generator.py",
+    "destination": "scripts/generate_procedural_layouts.py",
+    "source_sha256": "9313c67eee880a44090ac9ac6a8a2d5f95e54e3ad29512df92fa01bdbedb89a7",
+    "ported_sha256": "9313c67eee880a44090ac9ac6a8a2d5f95e54e3ad29512df92fa01bdbedb89a7",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/repo_overlay/experiments/phase6_demo_release_v003/01_showcase/d2_recovery/minimum_viable_hunter/tools/minimum_hunter_match.py",
+    "destination": "scripts/hunter_runtime.py",
+    "source_sha256": "225077ae7e63675b02384d6760028241d769065778ce76694951f8355c58c061",
+    "ported_sha256": "1cef885ef36e2f4d1a9b01d07980c8c1fe5f22886e9d3c77352ac7478adfe82d",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_peeker.py",
+    "destination": "scripts/local_geometry_peeker.py",
+    "source_sha256": "6047fbaeded23a63c8cfb540266e7090a2dc737a373ecc69016d991819266ce6",
+    "ported_sha256": "b28dcd887ac329ec42e6a973b3d60dba1b8e7752553e93a99c321d6b61f1a4fc",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_navigator.py",
+    "destination": "scripts/navigation_policy.py",
+    "source_sha256": "a205938f0b5d1761040147dfac6d1168512afcb21c0eb9b86a6a153911c1fa03",
+    "ported_sha256": "a205938f0b5d1761040147dfac6d1168512afcb21c0eb9b86a6a153911c1fa03",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "scripts/phase5_league.py",
+    "destination": "scripts/navigation_population.py",
+    "source_sha256": "8c298435333248679027b2f4c47f3f356c4d008824540b3ec265e0aab2826d99",
+    "ported_sha256": "57d501a37cd05d2ae7ff8eec123790ee96ad4cd8965b93b2ca7912c5cc060736",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_hunter_ppo.py",
+    "destination": "scripts/navigation_ppo.py",
+    "source_sha256": "b53454e525d17c7e1e95f30c9f569808b684aa80c96de2430e3b502fc855f6c6",
+    "ported_sha256": "c3dd5861419cbf09ad08422be0cb28d70dd67daec947358464d76ccfdb8aeddb",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/run_phase2_full.py",
+    "destination": "scripts/prepare_demonstration_dataset.py",
+    "source_sha256": "31e1c8936b515993c6044a6ab280485eba12fa57d279f7e8b60dc2bde85c5010",
+    "ported_sha256": "ec63322c19b868bc3dfc765478ddb8256c87b612cb782c718e3857fe408abbbb",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_c_relabel_gvg_dagger_v21.py",
+    "destination": "scripts/relabel_combat_dagger.py",
+    "source_sha256": "5519f92e2c50709ec119c4979c33ce024bd0c34fb7055e9589a2076af1f7a920",
+    "ported_sha256": "5519f92e2c50709ec119c4979c33ce024bd0c34fb7055e9589a2076af1f7a920",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/repo_overlay/experiments/phase6_demo_release_v003/01_showcase/d2_recovery/minimum_viable_hunter/tools/hard_negative_repaired_match.py",
+    "destination": "scripts/repaired_navigation_runtime.py",
+    "source_sha256": "90a6d0c09824f98e2db6f2a627e364cdb0d178b6fc2469a62b168aea8a53664a",
+    "ported_sha256": "953976d8ca4ed33a396c6d5b30d19737446d7ad7f697a94a2a65d5ad92f5e1aa",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/runtime/research_hud.py",
+    "destination": "scripts/runtime_observer.py",
+    "source_sha256": "5a28745da9df58b98725f2a2004853eff22d816588c8294e850f0eff666229b1",
+    "ported_sha256": "728348910a6169d6a8db7f4425d7c2452a1ba3021f62d9713152e578f107953e",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase6_bot_screen_match_v002.py",
+    "destination": "scripts/screen_anchor_controllers.py",
+    "source_sha256": "25224c8e5ad8af43c08148f8cac456c56aaf83b6b2cd9b85802a2d74f0f585a4",
+    "ported_sha256": "4cb1920d4bfd5b93481f8abecea582bab82a059dfec82d072e4893bbf9a951a0",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase6_bot_screen_match.py",
+    "destination": "scripts/screen_learned_controllers.py",
+    "source_sha256": "6fd106af105b047329a55ff044ea6a21db1a7f4b372092439ae32519dbf6352c",
+    "ported_sha256": "a3b31f71226a81f7519754285c84c4f619d17713fd2d6f11a690862dbb3b2dac",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase6_analyze_examiner_bank.py",
+    "destination": "scripts/select_examiner_bank.py",
+    "source_sha256": "75e1d35400769d6130397e9ebd6451b1ea3b112afca49e6a3a5e5b483eb73f89",
+    "ported_sha256": "d8bbcd09d1dfed215344711fe2fb290e4bac8b38fc54b20b688fac6405d2569f",
+    "changes": "Added analysis-only CLI option and distinct replay status; original algorithms, audits and full-certification mode retained"
+  },
+  {
+    "source": "scripts/make_phase3_splits.py",
+    "destination": "scripts/split_demonstration_sessions.py",
+    "source_sha256": "aa4d302061c0e612b0d9cf9a9179cdf9c99bcb0587ccc8f473897d343ee05144",
+    "ported_sha256": "aa4d302061c0e612b0d9cf9a9179cdf9c99bcb0587ccc8f473897d343ee05144",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase6_population_league_psro/03_tournament/phase6_symmetric_tournament.py",
+    "destination": "scripts/symmetric_tournament.py",
+    "source_sha256": "6ee4ac440d286dbc398eb7495ca8a24ab5cb7758f9236dc9622fb44864139d56",
+    "ported_sha256": "e21e05e6474902ea354d50a5aa3b38a0b2e5537678f153318ca262445416c4b4",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_tactical_handoff.py",
+    "destination": "scripts/tactical_handoff.py",
+    "source_sha256": "e7ae9628522ea9be09c10f3a6d62ebe1da8e9b9efafc7d7deaac0bb30df12ef4",
+    "ported_sha256": "10f127809e75ebb374d03b4d6c738384fbccc89ff82f88dc31297a057a9cad2f",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_train_gvg_dagger_v2_supervised.py",
+    "destination": "scripts/train_combat_dagger.py",
+    "source_sha256": "92536f2bf5a0cf620ef7099c24d8637867f64cb27fed8d35616fb1830213e1f2",
+    "ported_sha256": "e429ae3bdd01f732f9bfe95cd77976c27263b823e6040d045b379744d6aa50e3",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/run_phase3_distill_production.sh",
+    "destination": "scripts/train_combat_distillation.sh",
+    "source_sha256": "d7d2ca6ecaf3abc4b1000a015d8d7138bd3629f51380e950b3eb2840ea200fa3",
+    "ported_sha256": "4997f97ad4da4db77d37cc2999b9d29e83ff1e4a152fb67bf34262fb252cad6f",
+    "changes": "Renamed child scripts/package and replaced machine-specific paths/interpreter defaults"
+  },
+  {
+    "source": "scripts/phase3v2_b_one_sided_gvg.py",
+    "destination": "scripts/train_combat_ppo.py",
+    "source_sha256": "772425472f4c688d0c47f4dd180abe94a567888661b7f5a415bebd383e6f62cb",
+    "ported_sha256": "ffe6ef84665cd3d0d28df0f8917e579c53674b042b2cf75b407ea4317a67c22a",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_c_train_v22_bounded_residual.py",
+    "destination": "scripts/train_combat_residual.py",
+    "source_sha256": "93ad48655a827c49516e559e1b8042c38aca123a86eb0142d7cb7eb47854b75f",
+    "ported_sha256": "15ab4665c1261a0fdf19a75d5539c27cee4f7e795aae38048bed55fcf441bc9e",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase4_4g_train_gvg_candidate.py",
+    "destination": "scripts/train_combat_specialist.py",
+    "source_sha256": "c7bb30eaf959ee8982b9aad76f4ea397a7dad8f0d03f2bce683e4438cbc81b72",
+    "ported_sha256": "6fd1b5611d4645e8cc469ffe4592e9001b0b18e57307793940583c6dd8678acc",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase3v2_bc_actor_head_train_v21.py",
+    "destination": "scripts/train_combat_teacher_bc.py",
+    "source_sha256": "98b29a2d39df81a475c741be2838efd7e665377fda51f127e651e160bab12644",
+    "ported_sha256": "59c4894a1e25232fdc02f91399d3d6f8d0db08b63e2a1d59db1d27c60ce39070",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/training/train_bc.py",
+    "destination": "scripts/train_human_bc.py",
+    "source_sha256": "fbda7505e92b7708baf2be64e4952b90c60b2a7fe2f6adef0f8a818d8f9afdef",
+    "ported_sha256": "3fa4b7ad61ea079972fc80357ed3573691c56bde208ce2ef1b97721fb7ee8b02",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "src/rl/training/train_bc_advanced.py",
+    "destination": "scripts/train_human_bc_residual.py",
+    "source_sha256": "1603c5bb6e12f67df0e4f22bec241166661b81fbbf9063a4f3a2149e852969c9",
+    "ported_sha256": "04a0de73354d54d00266f711e8175177e05d1c439c5b55765d9e1755925912d9",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_hunter_orchestrate.py",
+    "destination": "scripts/train_hunter_curriculum.py",
+    "source_sha256": "c5d9c2904ca2bad328d8aa2d8d91a4312233cf63dccf486700901ebac6efb98c",
+    "ported_sha256": "66fb7c67d151beda0fa2cb4993757f86c8d0cd013a6c58058f3007570a2cff2a",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_navigator_train.py",
+    "destination": "scripts/train_navigation_bc.py",
+    "source_sha256": "8d607f782233b5b3618ef0372c583d0a44a44eb853a1f5725e917c7b809c008c",
+    "ported_sha256": "7386875bfde2d4045f526dae4399bcfd3004730d117a0941dc3ba1de399135ef",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_league_orchestrate.py",
+    "destination": "scripts/train_navigation_population.py",
+    "source_sha256": "b1d4cf3818db8cae91fddcc97cb670d4053f548e64e0326f179ca54fb75b0c08",
+    "ported_sha256": "81b0f5f7134f3dbb500fe0dd9fdbeccb159503335d16df2ee5fa5084da967fcb",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_hunter_train.py",
+    "destination": "scripts/train_navigation_ppo.py",
+    "source_sha256": "6155be56cf90ef40deb55a79b85362b238b58f2be77cbebf621dd80455e18102",
+    "ported_sha256": "46f429efa982d5db54678963c0e7188177b179922af473f8df8df49e605b355a",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_peek_orchestrate.py",
+    "destination": "scripts/train_peeking_curriculum.py",
+    "source_sha256": "c2348d05ed134ac708dc09359840aaee49e012c6c20bbdb81b9829f61d3b91ff",
+    "ported_sha256": "18bae6c172a190244a7ee2f835ac400b8a65745af05687ca76d68511a949568d",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase5_reacquire_orchestrate.py",
+    "destination": "scripts/train_reacquisition_curriculum.py",
+    "source_sha256": "94b3e3e6e0ea5a79d23fbef43c02d15dddcae0f5f8f042c4e544d872c43665e4",
+    "ported_sha256": "a223e7090a2f762bc0103ca9c7f14988e834518bead6dc259e596c039513233e",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/phase4_4g_safe_port_allocator.py",
+    "destination": "scripts/unity_port_allocator.py",
+    "source_sha256": "885eba92ddc1d8c884b49c9967aea8ab564039eafb7edaba0fb653cf6fe6933b",
+    "ported_sha256": "885eba92ddc1d8c884b49c9967aea8ab564039eafb7edaba0fb653cf6fe6933b",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/repo_overlay/experiments/phase6_demo_release_v003/01_showcase/tools/phase6_showcase_match.py",
+    "destination": "scripts/visible_combat_runtime.py",
+    "source_sha256": "501bc058b4e24952f62a62e23faffd12ec3a7b4af44712433edec93e55a97ac5",
+    "ported_sha256": "c72eb8f9f9ad17e1d4f81fefc3bdb113ae8b2f6082d36a93f85bf183941b3aac",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "experiments/phase6_research_demo_v003/01_package/laptop_demo_package_v003_research/repo_overlay/experiments/phase6_population_league_psro/07_exploiters/phase6_exploiter_eval_core.py",
+    "destination": "scripts/visible_tactics.py",
+    "source_sha256": "9389cfe9d01decb8922615f26559b52bf9a4717f64c8dd99f29968571a323a86",
+    "ported_sha256": "1a350fe5f733aaaa144ec746a0f946567ab85d6afacd7b7a136b748a8d46a64d",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "scripts/write_phase3_report.py",
+    "destination": "scripts/write_distillation_report.py",
+    "source_sha256": "24bb9038f89364d8949e8f03439ba654a9f870e4c98fc1c0155b81fcf5693ed6",
+    "ported_sha256": "24bb9038f89364d8949e8f03439ba654a9f870e4c98fc1c0155b81fcf5693ed6",
+    "changes": "Verbatim copy"
+  },
+  {
+    "source": "tests/test_phase3_production.py",
+    "destination": "tests/test_command_distillation.py",
+    "source_sha256": "8f520080b56a035459aba7b578056f00ed5c209ef18a8e3c3ea39a883b24c84d",
+    "ported_sha256": "7bb3c4c815e633a1c8b2f0293becb2c9dba76c5d862f4c00ff55fd60097da193",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "tests/test_phase5_peeker.py",
+    "destination": "tests/test_local_geometry_peeker.py",
+    "source_sha256": "6201494e0c4ff3b948d2d4796cc32f44a0ab237f2392f743410b021fa4861644",
+    "ported_sha256": "84c61bbb3e246b18159038c43740a559e21333a8bc7654f6432306d7850fa0ab",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "tests/test_phase5_reacquire.py",
+    "destination": "tests/test_reacquisition.py",
+    "source_sha256": "5a43f799b17299d19ed03fd505a82819a4d513d884c60ff025987aa45bcc7462",
+    "ported_sha256": "2b594def4095532f54335f9b63d730a0f296d42f2111d8dc7938140d079ff0bb",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "tests/test_phase5_tactical_handoff.py",
+    "destination": "tests/test_tactical_handoff.py",
+    "source_sha256": "65ab71a6ac87eb2a2d8b707307103311a81ffcd3862ed14afb777c724d2e33e4",
+    "ported_sha256": "4d0db220ab24a332b160d179de2ba17225957e4ff8e239ca0985fcf5302c71f6",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  },
+  {
+    "source": "tests/test_vectorized_ppo.py",
+    "destination": "tests/test_vectorized_ppo.py",
+    "source_sha256": "6ff4c3e576ac3924f7241aad0746bb836429bfc904141aa485c74a22e101d746",
+    "ported_sha256": "adec367e32d700b41270e4178dd859263f7a893f875544ade59d993b6221efb8",
+    "changes": "Renamed package/modules/files and relocated imports/default paths; retained model, loss and controller logic"
+  }
+]
